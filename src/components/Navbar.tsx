@@ -11,6 +11,12 @@ const Navbar = () => {
           </Link>
           <div className="flex space-x-4">
             <Link 
+              to="/" 
+              className="font-sfpro text-gray-900 hover:text-gray-600 transition-colors bg-gray-100 px-4 py-2 rounded-lg"
+            >
+              Home
+            </Link>
+            <Link 
               to="/about" 
               className="font-sfpro text-gray-900 hover:text-gray-600 transition-colors bg-gray-100 px-4 py-2 rounded-lg"
             >
@@ -27,6 +33,12 @@ const Navbar = () => {
               className="font-sfpro text-gray-900 hover:text-gray-600 transition-colors bg-gray-100 px-4 py-2 rounded-lg"
             >
               Resume
+            </Link>
+            <Link 
+              to="/contact" 
+              className="font-sfpro text-gray-900 hover:text-gray-600 transition-colors bg-gray-100 px-4 py-2 rounded-lg"
+            >
+              Contact
             </Link>
           </div>
         </div>
