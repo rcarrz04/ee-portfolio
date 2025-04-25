@@ -10,6 +10,8 @@ import Projects from "./pages/Projects";
 import ProjectDetail from "./pages/ProjectDetail";
 import Resume from "./pages/Resume";
 import NotFound from "./pages/NotFound";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
 
 const queryClient = new QueryClient();
 
