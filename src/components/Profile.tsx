@@ -1,5 +1,5 @@
 
-import { Github, Mail, Linkedin } from "lucide-react";
+import { Github, Mail, Linkedin, MapPin } from "lucide-react";
 
 const Profile = () => {
   return (
@@ -14,7 +14,10 @@ const Profile = () => {
       <div className="flex flex-col items-center space-y-2">
         <h2 className="text-xl font-bold text-gray-900">Ruben Carrazco</h2>
         <p className="text-gray-600">B.S. Electrical Engineering</p>
-        <p className="text-gray-600">at Stanford University</p>
+        <div className="flex items-center space-x-1">
+          <MapPin size={16} className="text-gray-600 mr-1" />
+          <p className="text-gray-600">Stanford University, CA</p>
+        </div>
       </div>
       <div className="flex space-x-4">
         <a
@@ -45,3 +48,4 @@ const Profile = () => {
 };
 
 export default Profile;
+
