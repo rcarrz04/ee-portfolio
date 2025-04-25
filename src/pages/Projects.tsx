@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import Profile from "../components/Profile";
 
@@ -15,21 +16,25 @@ const projects = [
     skills: ["RF Design", "Arduino", "IoT Protocols"],
   },
   {
+    id: "motor-controller",
     title: "Motor Controller",
     image: "/placeholder.svg",
     skills: ["Control Systems", "Power Electronics", "DSP"],
   },
   {
+    id: "energy-monitor",
     title: "Energy Monitor",
     image: "/placeholder.svg",
     skills: ["Analog Design", "Python", "Data Analysis"],
   },
   {
+    id: "battery-management",
     title: "Battery Management",
     image: "/placeholder.svg",
     skills: ["Power Systems", "C++", "Hardware Design"],
   },
   {
+    id: "led-matrix-display",
     title: "LED Matrix Display",
     image: "/placeholder.svg",
     skills: ["FPGA", "Verilog", "LED Drivers"],
