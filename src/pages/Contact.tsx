@@ -1,11 +1,12 @@
 
-import { Mail, Linkedin } from "lucide-react";
+import { Mail, Linkedin, Phone } from "lucide-react";
 
 const Contact = () => {
   return (
     <div className="min-h-screen pt-16 pb-12">
-      <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center space-y-8">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 className="text-3xl font-bold text-left mb-8">Contact Me</h1>
+        <div className="flex flex-col md:flex-row gap-8 items-start">
           <div className="w-64 h-64 rounded-lg overflow-hidden">
             <img
               src="/placeholder.svg"
@@ -36,6 +37,16 @@ const Contact = () => {
                 LinkedIn Profile
               </a>
             </div>
+
+            <div className="flex items-center space-x-4 group">
+              <Phone size={24} className="text-gray-600 group-hover:text-gray-900 transition-colors" />
+              <a 
+                href="tel:+1234567890"
+                className="text-lg text-gray-600 group-hover:text-gray-900 transition-colors"
+              >
+                (123) 456-7890
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -44,3 +55,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
