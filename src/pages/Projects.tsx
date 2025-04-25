@@ -1,13 +1,15 @@
-
+import { Link } from "react-router-dom";
 import Profile from "../components/Profile";
 
 const projects = [
   {
+    id: "smart-power-system",
     title: "Smart Power System",
     image: "/placeholder.svg",
     skills: ["PCB Design", "Power Electronics", "Embedded C"],
   },
   {
+    id: "iot-sensor-network",
     title: "IoT Sensor Network",
     image: "/placeholder.svg",
     skills: ["RF Design", "Arduino", "IoT Protocols"],
@@ -45,29 +47,35 @@ const Projects = () => {
           <div className="md:col-span-2">
             <h1 className="text-4xl font-medium mb-12">Projects</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              {projects.map((project, index) => (
-                <div key={index} className="flex flex-col items-center">
-                  <div className="w-32 h-32 rounded-full overflow-hidden mb-4 border-2 border-gray-100">
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-full object-cover"
-                    />
+              {projects.map((project) => (
+                <Link 
+                  key={project.id} 
+                  to={`/projects/${project.id}`} 
+                  className="group hover:scale-105 transition-transform duration-200"
+                >
+                  <div className="flex flex-col items-center">
+                    <div className="w-32 h-32 rounded-full overflow-hidden mb-4 border-2 border-gray-100">
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <h3 className="text-lg font-medium text-center mb-2 group-hover:text-gray-600">
+                      {project.title}
+                    </h3>
+                    <div className="flex flex-wrap justify-center gap-2">
+                      {project.skills.map((skill, skillIndex) => (
+                        <span
+                          key={skillIndex}
+                          className="text-sm text-gray-600 bg-gray-100 px-3 py-1 rounded-full"
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
                   </div>
-                  <h3 className="text-lg font-medium text-center mb-2">
-                    {project.title}
-                  </h3>
-                  <div className="flex flex-wrap justify-center gap-2">
-                    {project.skills.map((skill, skillIndex) => (
-                      <span
-                        key={skillIndex}
-                        className="text-sm text-gray-600 bg-gray-100 px-3 py-1 rounded-full"
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
