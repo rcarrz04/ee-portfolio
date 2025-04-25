@@ -11,6 +11,11 @@ const Profile = () => {
           className="w-full h-full object-cover"
         />
       </div>
+      <div className="flex flex-col items-center space-y-2">
+        <h2 className="text-xl font-bold text-gray-900">Ruben Carrazco</h2>
+        <p className="text-gray-600">B.S. Electrical Engineering</p>
+        <p className="text-gray-600">at Stanford University</p>
+      </div>
       <div className="flex space-x-4">
         <a
           href="https://github.com"
