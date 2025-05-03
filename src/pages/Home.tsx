@@ -30,12 +30,12 @@ const sections = [
 const Home = () => {
   return (
     <div className="min-h-screen">
-      <div 
-        className="h-[60vh] bg-cover bg-center relative"
-        style={{ 
-          backgroundImage: 'url("/ee-portfolio/headshot_Carrazco.JPEG")'
-        }}
-      >
+      <div className="h-[60vh] relative">
+        <img
+          src="/ee-portfolio/headshot_Carrazco.JPEG"
+          alt="Ruben Carrazco"
+          className="w-full h-full object-cover"
+        />
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
           <h1 className="text-6xl font-bold text-white font-sfpro">Ruben Carrazco</h1>
         </div>
