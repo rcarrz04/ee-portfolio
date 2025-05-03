@@ -29,7 +29,7 @@ jobs:
       - name: Install Dependencies
         run: |
           npm install
-          npm install vite@latest
+          npm install vite@5.0.12 @tanstack/react-query@4.36.1
         
       - name: Build
         run: npm run build
