@@ -4,7 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: process.env.VITE_BASE_URL || "/ee-portfolio/",
+  base: "/ee-portfolio/",
 
   server: {
     port: 8080,
