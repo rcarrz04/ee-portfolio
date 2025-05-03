@@ -20,8 +20,13 @@ export default defineConfig({
     outDir: "dist",
     sourcemap: false,
     rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, "index.html"),
+      },
       output: {
         manualChunks: undefined,
+        assetFileNames: "assets/[name].[ext]",
+        entryFileNames: "assets/[name].js",
       },
     },
   },
