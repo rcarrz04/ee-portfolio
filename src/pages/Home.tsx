@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 
 const sections = [
@@ -6,7 +5,7 @@ const sections = [
     title: "About",
     path: "/about",
     description: "Learn more about my background in Electrical Engineering and my passion for innovation.",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a6a2a5aee158",
   },
   {
     title: "Projects",
@@ -34,7 +33,7 @@ const Home = () => {
       <div 
         className="h-[60vh] bg-cover bg-center relative"
         style={{ 
-          backgroundImage: 'url("https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05")'
+          backgroundImage: 'url("/ee-portfolio/headshot_Carrazco.JPEG")'
         }}
       >
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
