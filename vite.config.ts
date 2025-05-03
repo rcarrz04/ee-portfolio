@@ -7,7 +7,6 @@ export default defineConfig({
   base: process.env.VITE_BASE_URL || "/ee-portfolio/",
 
   server: {
-    host: "::",
     port: 8080,
   },
   plugins: [react()],
