@@ -29,7 +29,7 @@ jobs:
       - name: Install Dependencies
         run: |
           npm install --legacy-peer-deps
-          npm install vite@5.0.12 @tanstack/react-query@4.36.1 --legacy-peer-deps
+          npm install typescript@5.3.3 vite@5.0.12 @tanstack/react-query@4.36.1 --legacy-peer-deps
         
       - name: Build
         run: npm run build
