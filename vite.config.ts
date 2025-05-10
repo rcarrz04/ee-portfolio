@@ -18,19 +18,30 @@ export default defineConfig({
     rollupOptions: {
       output: {
         assetFileNames: "assets/[name][extname]",
-      },
-      external: [
-        'next-themes',
-        'lucide-react',
-        'class-variance-authority',
-        'tailwind-merge',
-        'clsx',
-        '@radix-ui/react-slot',
-        '@radix-ui/react-label',
-        '@radix-ui/react-dialog',
-        '@radix-ui/react-dropdown-menu',
-        '@radix-ui/react-avatar'
-      ],
-    },
+        manualChunks: {
+          'vendor': [
+            'react',
+            'react-dom',
+            'react-router-dom',
+            'react-router',
+            '@tanstack/react-query',
+            'next-themes',
+            'sonner',
+            'lucide-react',
+            'class-variance-authority',
+            'tailwind-merge',
+            'clsx',
+            '@radix-ui/react-slot',
+            '@radix-ui/react-label',
+            '@radix-ui/react-dialog',
+            '@radix-ui/react-dropdown-menu',
+            '@radix-ui/react-avatar',
+            '@radix-ui/react-toast',
+            '@radix-ui/react-tooltip',
+            '@radix-ui/react-aspect-ratio'
+          ]
+        }
+      }
+    }
   },
 });
