@@ -7,25 +7,25 @@ const sections = [
     title: "About",
     path: "/about",
     description: "Learn more about my background in Electrical Engineering and my passion for innovation.",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a6a2a5aee158",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a6a2a5aee1?auto=format&fit=crop&w=800&q=80",
   },
   {
     title: "Projects",
     path: "/projects",
     description: "Explore my portfolio of electrical engineering projects, from power systems to IoT solutions.",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
   },
   {
     title: "Resume",
     path: "/resume",
     description: "View my professional experience, education, and technical skills.",
-    image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
+    image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=800&q=80",
   },
   {
     title: "Contact",
     path: "/contact",
     description: "Get in touch with me for collaborations or opportunities.",
-    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
   },
 ];
 
