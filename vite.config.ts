@@ -25,7 +25,6 @@ export default defineConfig({
             'react-router-dom',
             'react-router',
             '@tanstack/react-query',
-            'next-themes',
             'sonner',
             'lucide-react',
             'class-variance-authority',
