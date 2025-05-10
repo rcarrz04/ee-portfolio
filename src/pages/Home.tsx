@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { TypeAnimation } from 'react-type-animation';
+import AnimatedBackground from "@/components/AnimatedBackground";
 
 const sections = [
   {
@@ -32,12 +33,8 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-white">
       <div className="h-[60vh] relative">
-        <img
-          src="/ee-portfolio/pcbbanner.jpg"
-          alt="PCB Banner"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+        <AnimatedBackground />
+        <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center space-y-2">
             <TypeAnimation
               sequence={[
