@@ -48,16 +48,18 @@ const Home = () => {
             <TypeAnimation
               sequence={[
                 'Hello my name is Ruben Carrazco',
-                1000,
+                2000,
                 '',
-                500,
-                'Welcome to my Engineering Portfolio',
                 1000,
+                'Welcome to my Engineering Portfolio',
+                2000,
               ]}
               wrapper="h1"
               speed={50}
+              deletionSpeed={50}
               className="text-4xl font-bold text-white font-sfpro whitespace-pre-line"
               repeat={0}
+              cursor={false}
             />
           </div>
         </div>
