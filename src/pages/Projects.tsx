@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import Profile from "../components/Profile";
 
@@ -6,37 +5,37 @@ const projects = [
   {
     id: "smart-power-system",
     title: "Smart Power System",
-    image: "/placeholder.svg",
+    image: "/headshot_Carrazco.JPEG",
     skills: ["PCB Design", "Power Electronics", "Embedded C"],
   },
   {
     id: "iot-sensor-network",
     title: "IoT Sensor Network",
-    image: "/placeholder.svg",
+    image: "/headshot_Carrazco.JPEG",
     skills: ["RF Design", "Arduino", "IoT Protocols"],
   },
   {
     id: "motor-controller",
     title: "Motor Controller",
-    image: "/placeholder.svg",
+    image: "/headshot_Carrazco.JPEG",
     skills: ["Control Systems", "Power Electronics", "DSP"],
   },
   {
     id: "energy-monitor",
     title: "Energy Monitor",
-    image: "/placeholder.svg",
+    image: "/headshot_Carrazco.JPEG",
     skills: ["Analog Design", "Python", "Data Analysis"],
   },
   {
     id: "battery-management",
     title: "Battery Management",
-    image: "/placeholder.svg",
+    image: "/headshot_Carrazco.JPEG",
     skills: ["Power Systems", "C++", "Hardware Design"],
   },
   {
     id: "led-matrix-display",
     title: "LED Matrix Display",
-    image: "/placeholder.svg",
+    image: "/headshot_Carrazco.JPEG",
     skills: ["FPGA", "Verilog", "LED Drivers"],
   },
 ];
