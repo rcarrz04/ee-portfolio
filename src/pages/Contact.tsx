@@ -1,51 +1,51 @@
-
-import { Mail, Linkedin, Phone } from "lucide-react";
+import { Mail, Phone, Linkedin, Github } from "lucide-react";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen pt-16 pb-12">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-3xl font-bold text-left mb-8">Contact Me</h1>
-        <div className="flex flex-col md:flex-row gap-8 items-start">
-          <div className="w-64 h-64 rounded-lg overflow-hidden">
-            <img
-              src="/placeholder.svg"
-              alt="Profile"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          
-          <div className="space-y-6">
-            <div className="flex items-center space-x-4 group">
-              <Mail size={24} className="text-gray-600 group-hover:text-gray-900 transition-colors" />
-              <a 
-                href="mailto:your.email@example.com"
-                className="text-lg text-gray-600 group-hover:text-gray-900 transition-colors"
-              >
-                your.email@example.com
-              </a>
+    <div className="min-h-screen pt-16 pb-12 font-sfpro">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="mt-12">
+          <h1 className="text-4xl font-medium mb-8">Contact Me</h1>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="space-y-6">
+              <div className="flex items-center space-x-4">
+                <Mail className="w-6 h-6 text-gray-600" />
+                <a href="mailto:ruben04@stanford.edu" className="text-lg text-gray-600 hover:text-gray-900">
+                  ruben04@stanford.edu
+                </a>
+              </div>
+              <div className="flex items-center space-x-4">
+                <Phone className="w-6 h-6 text-gray-600" />
+                <a href="tel:+13232303022" className="text-lg text-gray-600 hover:text-gray-900">
+                  +1 (323) 230-3022
+                </a>
+              </div>
+              <div className="flex items-center space-x-4">
+                <Linkedin className="w-6 h-6 text-gray-600" />
+                <a 
+                  href="https://www.linkedin.com/in/ruben-carrazco-368b6a263/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-lg text-gray-600 hover:text-gray-900"
+                >
+                  LinkedIn Profile
+                </a>
+              </div>
+              <div className="flex items-center space-x-4">
+                <Github className="w-6 h-6 text-gray-600" />
+                <a 
+                  href="https://github.com/rcarrz04" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-lg text-gray-600 hover:text-gray-900"
+                >
+                  GitHub Profile
+                </a>
+              </div>
             </div>
-            
-            <div className="flex items-center space-x-4 group">
-              <Linkedin size={24} className="text-gray-600 group-hover:text-gray-900 transition-colors" />
-              <a 
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-lg text-gray-600 group-hover:text-gray-900 transition-colors"
-              >
-                LinkedIn Profile
-              </a>
-            </div>
-
-            <div className="flex items-center space-x-4 group">
-              <Phone size={24} className="text-gray-600 group-hover:text-gray-900 transition-colors" />
-              <a 
-                href="tel:+1234567890"
-                className="text-lg text-gray-600 group-hover:text-gray-900 transition-colors"
-              >
-                (123) 456-7890
-              </a>
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h2 className="text-xl font-medium mb-4">Location</h2>
+              <p className="text-gray-600">Stanford University, CA</p>
             </div>
           </div>
         </div>
