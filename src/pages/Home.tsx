@@ -38,16 +38,22 @@ const Home = () => {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-          <TypeAnimation
-            sequence={[
-              'Ruben Carrazco – Engineering Portfolio',
-              1000,
-            ]}
-            wrapper="h1"
-            speed={50}
-            className="text-6xl font-bold text-white font-sfpro text-center"
-            repeat={0}
-          />
+          <div className="text-center">
+            <TypeAnimation
+              sequence={[
+                'Hello my name is',
+                1000,
+                'Ruben Carrazco',
+                1000,
+                'Welcome to my Engineering Portfolio',
+                1000,
+              ]}
+              wrapper="h1"
+              speed={50}
+              className="text-4xl font-bold text-white font-sfpro"
+              repeat={0}
+            />
+          </div>
         </div>
       </div>
       
