@@ -61,7 +61,7 @@ const Home = () => {
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="space-y-24">
+        <div className="space-y-12">
           {sections.map((section, index) => (
             <motion.div
               key={section.title}
@@ -74,8 +74,8 @@ const Home = () => {
                 to={section.path}
                 className="group block"
               >
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                  <div className="h-64 overflow-hidden rounded-lg">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                  <div className="h-48 overflow-hidden rounded-lg">
                     <img
                       src={section.image}
                       alt={section.title}
@@ -83,10 +83,10 @@ const Home = () => {
                     />
                   </div>
                   <div>
-                    <h2 className="text-3xl font-medium mb-4 text-foreground group-hover:text-primary transition-colors">
+                    <h2 className="text-2xl font-medium mb-2 text-foreground group-hover:text-primary transition-colors">
                       {section.title}
                     </h2>
-                    <p className="text-lg text-muted-foreground leading-relaxed">
+                    <p className="text-base text-muted-foreground leading-relaxed">
                       {section.description}
                     </p>
                   </div>
