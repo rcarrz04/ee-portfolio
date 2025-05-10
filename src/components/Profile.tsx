@@ -28,13 +28,13 @@ const Profile = () => {
           <Github size={24} />
         </a>
         <a
-          href="mailto:your.email@example.com"
+          href="mailto:ruben04@stanford.edu"
           className="text-gray-600 hover:text-gray-900 transition-colors"
         >
           <Mail size={24} />
         </a>
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/ruben-carrazco-368b6a263/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-600 hover:text-gray-900 transition-colors"
