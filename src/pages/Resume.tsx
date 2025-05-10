@@ -24,7 +24,8 @@ const Resume = () => {
             <div className="w-full min-h-[150vh] rounded-lg overflow-hidden border border-gray-200">
               <iframe
                 src="/ee-portfolio/Resume_Carrazco_Ruben_EE.pdf"
-                className="w-full h-full"
+                className="w-full h-[150vh]"
+                style={{ minHeight: '150vh' }}
                 title="Ruben Carrazco's Resume"
               />
             </div>
