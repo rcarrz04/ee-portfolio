@@ -43,7 +43,7 @@ const Contact = () => {
                 </a>
               </div>
             </div>
-            <div className="md:col-span-2 rounded-lg overflow-hidden">
+            <div className="md:col-span-2 rounded-lg overflow-hidden -mt-8">
               <img
                 src="/ee-portfolio/skydiving.jpg"
                 alt="Skydiving"
