@@ -6,7 +6,7 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mt-12">
           <h1 className="text-4xl font-medium mb-8">Contact Me</h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
                 <Mail className="w-6 h-6 text-gray-600" />
@@ -43,18 +43,12 @@ const Contact = () => {
                 </a>
               </div>
             </div>
-            <div className="space-y-6">
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h2 className="text-xl font-medium mb-4">Location</h2>
-                <p className="text-gray-600">Stanford University, CA</p>
-              </div>
-              <div className="rounded-lg overflow-hidden">
-                <img
-                  src="/ee-portfolio/skydiving.jpg"
-                  alt="Skydiving"
-                  className="w-full h-64 object-cover"
-                />
-              </div>
+            <div className="md:col-span-2 rounded-lg overflow-hidden">
+              <img
+                src="/ee-portfolio/skydiving.jpg"
+                alt="Skydiving"
+                className="w-full h-[400px] object-cover"
+              />
             </div>
           </div>
         </div>
