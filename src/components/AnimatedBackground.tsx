@@ -1,16 +1,45 @@
 import { useEffect, useRef } from 'react';
 
 const equationTexts = [
+  // Basic EE equations
   'V = IR',
   'P = VI',
-  'F = ma',
-  'E = mc²',
-  '∇ × E = -∂B/∂t',
-  '∇ × H = J + ∂D/∂t',
   'Z = R + jX',
-  'ω = 2πf',
   'Q = CV',
   'τ = RC',
+  'ω = 2πf',
+  'X_L = ωL',
+  'X_C = 1/ωC',
+  'I = C(dV/dt)',
+  'V = L(dI/dt)',
+  
+  // Power equations
+  'P = I²R',
+  'P = V²/R',
+  'S = VI*',
+  'PF = cos(θ)',
+  
+  // Maxwell's equations
+  '∇ × E = -∂B/∂t',
+  '∇ × H = J + ∂D/∂t',
+  '∇ · D = ρ',
+  '∇ · B = 0',
+  
+  // Circuit analysis
+  'V = V₁ + V₂ + ...',
+  'I = I₁ + I₂ + ...',
+  'Z = √(R² + X²)',
+  'θ = tan⁻¹(X/R)',
+  
+  // Semiconductor
+  'I = I₀(e^(qV/kT) - 1)',
+  'β = I_C/I_B',
+  'V_T = kT/q',
+  
+  // Digital
+  'f = 1/T',
+  't_pd = t_phl + t_plh',
+  'P = CV²f',
 ];
 
 const AnimatedBackground = () => {
@@ -31,61 +60,6 @@ const AnimatedBackground = () => {
     resizeCanvas();
     window.addEventListener('resize', resizeCanvas);
 
-    // Circle class
-    class Circle {
-      x: number;
-      y: number;
-      vx: number;
-      vy: number;
-      radius: number;
-      alpha: number;
-      fadeOut: boolean;
-      maxLife: number;
-      life: number;
-
-      constructor() {
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height;
-        this.vx = (Math.random() - 0.5) * 2;
-        this.vy = (Math.random() - 0.5) * 2;
-        this.radius = Math.random() * 3 + 1;
-        this.alpha = 0.3;
-        this.fadeOut = Math.random() < 0.3; // 30% chance to fade out
-        this.maxLife = Math.random() * 200 + 100;
-        this.life = this.maxLife;
-      }
-
-      update() {
-        // Bounce off edges
-        if (this.x + this.radius > canvas.width || this.x - this.radius < 0) {
-          this.vx *= -1;
-        }
-        if (this.y + this.radius > canvas.height || this.y - this.radius < 0) {
-          this.vy *= -1;
-        }
-
-        // Update position
-        this.x += this.vx;
-        this.y += this.vy;
-
-        // Update fade out
-        if (this.fadeOut) {
-          this.life--;
-          this.alpha = (this.life / this.maxLife) * 0.3;
-          return this.life > 0;
-        }
-
-        return true;
-      }
-
-      draw(ctx: CanvasRenderingContext2D) {
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(255, 255, 255, ${this.alpha})`;
-        ctx.fill();
-      }
-    }
-
     // Equation class
     class Equation {
       x: number;
@@ -104,12 +78,12 @@ const AnimatedBackground = () => {
 
       update() {
         if (this.growing) {
-          this.alpha += 0.005;
+          this.alpha += 0.01; // Faster fade in
           if (this.alpha >= 1) {
             this.growing = false;
           }
         } else {
-          this.alpha -= 0.005;
+          this.alpha -= 0.01; // Faster fade out
           if (this.alpha <= 0) {
             return false;
           }
@@ -125,31 +99,15 @@ const AnimatedBackground = () => {
     }
 
     const equations: Equation[] = [];
-    const circles: Circle[] = [];
     let lastEquationTime = 0;
-    let lastCircleTime = 0;
 
     const animate = () => {
       ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      // Update and draw circles
-      const now = Date.now();
-      if (now - lastCircleTime > 100) { // Add new circle every 100ms
-        circles.push(new Circle());
-        lastCircleTime = now;
-      }
-
-      for (let i = circles.length - 1; i >= 0; i--) {
-        if (!circles[i].update()) {
-          circles.splice(i, 1);
-        } else {
-          circles[i].draw(ctx);
-        }
-      }
-
       // Update and draw equations
-      if (now - lastEquationTime > 3000) {
+      const now = Date.now();
+      if (now - lastEquationTime > 2000) { // New equation every 2 seconds
         equations.push(new Equation());
         lastEquationTime = now;
       }
