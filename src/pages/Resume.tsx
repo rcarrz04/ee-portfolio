@@ -21,7 +21,7 @@ const Resume = () => {
                 <span>Download PDF</span>
               </a>
             </div>
-            <div className="w-full h-[2000px] rounded-lg overflow-hidden border border-gray-200">
+            <div className="w-full min-h-[150vh] rounded-lg overflow-hidden border border-gray-200">
               <iframe
                 src="/ee-portfolio/Resume_Carrazco_Ruben_EE.pdf"
                 className="w-full h-full"
