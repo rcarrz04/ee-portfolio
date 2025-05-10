@@ -33,8 +33,11 @@ const sections = [
 ];
 
 const Home = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const refs = sections.map(() => useRef(null));
+  const inViews = refs.map(ref => useInView(ref, { 
+    once: true,
+    margin: "-100px 0px"
+  }));
 
   return (
     <div className="min-h-screen bg-white">
@@ -61,21 +64,21 @@ const Home = () => {
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="space-y-12">
+        <div className="space-y-8">
           {sections.map((section, index) => (
             <motion.div
               key={section.title}
-              ref={ref}
+              ref={refs[index]}
               initial={{ x: -100, opacity: 0 }}
-              animate={isInView ? { x: 0, opacity: 1 } : { x: -100, opacity: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
+              animate={inViews[index] ? { x: 0, opacity: 1 } : { x: -100, opacity: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <Link
                 to={section.path}
-                className="group block"
+                className="group block bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200"
               >
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-                  <div className="h-48 overflow-hidden rounded-lg">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center p-4">
+                  <div className="h-40 overflow-hidden rounded-lg">
                     <img
                       src={section.image}
                       alt={section.title}
@@ -83,10 +86,10 @@ const Home = () => {
                     />
                   </div>
                   <div>
-                    <h2 className="text-2xl font-medium mb-2 text-foreground group-hover:text-primary transition-colors">
+                    <h2 className="text-xl font-medium mb-2 text-gray-900 group-hover:text-primary transition-colors">
                       {section.title}
                     </h2>
-                    <p className="text-base text-muted-foreground leading-relaxed">
+                    <p className="text-sm text-gray-600 leading-relaxed">
                       {section.description}
                     </p>
                   </div>
