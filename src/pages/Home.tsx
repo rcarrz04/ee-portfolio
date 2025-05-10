@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { TypeAnimation } from 'react-type-animation';
 
 const sections = [
   {
@@ -37,7 +38,16 @@ const Home = () => {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-          <h1 className="text-6xl font-bold text-white font-sfpro">Ruben Carrazco</h1>
+          <TypeAnimation
+            sequence={[
+              'Welcome to my Engineering Portfolio',
+              1000,
+            ]}
+            wrapper="h1"
+            speed={50}
+            className="text-6xl font-bold text-white font-sfpro text-center"
+            repeat={0}
+          />
         </div>
       </div>
       
