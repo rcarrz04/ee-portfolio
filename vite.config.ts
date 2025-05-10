@@ -19,7 +19,7 @@ export default defineConfig({
       output: {
         assetFileNames: "assets/[name][extname]",
       },
-      external: ['next-themes', 'lucide-react'],
+      external: ['next-themes', 'lucide-react', 'class-variance-authority'],
     },
   },
 });
