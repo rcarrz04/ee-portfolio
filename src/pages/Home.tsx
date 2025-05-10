@@ -40,7 +40,9 @@ const Home = () => {
               sequence={[
                 'Hello my name is Ruben Carrazco',
                 1000,
-                'Hello my name is Ruben Carrazco\nWelcome to my Engineering Portfolio',
+                '',
+                500,
+                'Welcome to my Engineering Portfolio',
                 1000,
               ]}
               wrapper="h1"

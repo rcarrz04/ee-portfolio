@@ -39,32 +39,58 @@ const AnimatedBackground = () => {
       vy: number;
       life: number;
       maxLife: number;
+      branches: Spark[];
+      isBranch: boolean;
 
-      constructor(x: number, y: number) {
+      constructor(x: number, y: number, isBranch = false) {
         this.x = x;
         this.y = y;
         const angle = Math.random() * Math.PI * 2;
-        const speed = Math.random() * 2 + 1;
+        const speed = Math.random() * 3 + 2;
         this.vx = Math.cos(angle) * speed;
         this.vy = Math.sin(angle) * speed;
-        this.maxLife = Math.random() * 50 + 50;
+        this.maxLife = isBranch ? 15 : Math.random() * 20 + 10;
         this.life = this.maxLife;
+        this.branches = [];
+        this.isBranch = isBranch;
+
+        // Create branches for main sparks
+        if (!isBranch && Math.random() < 0.3) {
+          const numBranches = Math.floor(Math.random() * 3) + 1;
+          for (let i = 0; i < numBranches; i++) {
+            this.branches.push(new Spark(x, y, true));
+          }
+        }
       }
 
       update() {
         this.x += this.vx;
         this.y += this.vy;
         this.life--;
+
+        // Update branches
+        for (let i = this.branches.length - 1; i >= 0; i--) {
+          this.branches[i].update();
+          if (this.branches[i].life <= 0) {
+            this.branches.splice(i, 1);
+          }
+        }
       }
 
       draw(ctx: CanvasRenderingContext2D) {
         const alpha = this.life / this.maxLife;
+        const length = this.isBranch ? 3 : 5;
+        
+        // Draw main spark
         ctx.beginPath();
         ctx.moveTo(this.x, this.y);
-        ctx.lineTo(this.x - this.vx * 2, this.y - this.vy * 2);
+        ctx.lineTo(this.x - this.vx * length, this.y - this.vy * length);
         ctx.strokeStyle = `rgba(255, 255, 255, ${alpha})`;
-        ctx.lineWidth = 2;
+        ctx.lineWidth = this.isBranch ? 1 : 2;
         ctx.stroke();
+
+        // Draw branches
+        this.branches.forEach(branch => branch.draw(ctx));
       }
     }
 
