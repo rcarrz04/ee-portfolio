@@ -32,8 +32,8 @@ const Home = () => {
     <div className="min-h-screen">
       <div className="h-[60vh] relative">
         <img
-          src="/ee-portfolio/headshot_Carrazco.JPEG"
-          alt="Ruben Carrazco"
+          src="/ee-portfolio/pcbbanner.jpg"
+          alt="PCB Banner"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
