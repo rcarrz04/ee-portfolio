@@ -8,7 +8,7 @@ const Resume = () => {
           <div className="flex justify-between items-center mb-6">
             <h1 className="text-4xl font-medium">Resume</h1>
             <a
-              href="/ee-portfolio/Resume_Carrazco_Ruben_EE.pdf"
+              href="/ee-portfolio/Resume_25_Ruben_Carrazco_(EE).pdf"
               download
               className="flex items-center space-x-2 px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors"
             >
@@ -18,7 +18,7 @@ const Resume = () => {
           </div>
           <div className="w-full min-h-[150vh] rounded-lg overflow-hidden border border-gray-200">
             <iframe
-              src="/ee-portfolio/Resume_Carrazco_Ruben_EE.pdf"
+              src="/ee-portfolio/Resume_25_Ruben_Carrazco_(EE).pdf"
               className="w-full h-[150vh]"
               style={{ minHeight: '150vh' }}
               title="Ruben Carrazco's Resume"
