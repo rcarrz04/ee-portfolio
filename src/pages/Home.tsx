@@ -77,15 +77,15 @@ const Home = () => {
                 to={section.path}
                 className="group block bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200"
               >
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center p-4">
-                  <div className="h-40 overflow-hidden rounded-lg">
+                <div className="flex items-center p-4">
+                  <div className="w-32 h-32 flex-shrink-0 overflow-hidden rounded-lg">
                     <img
                       src={section.image}
                       alt={section.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
-                  <div>
+                  <div className="ml-4">
                     <h2 className="text-xl font-medium mb-2 text-gray-900 group-hover:text-primary transition-colors">
                       {section.title}
                     </h2>
