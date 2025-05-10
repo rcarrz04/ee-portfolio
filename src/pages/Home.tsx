@@ -32,7 +32,7 @@ const Home = () => {
     <div className="min-h-screen">
       <div className="h-[60vh] relative">
         <img
-          src="/ee-portfolio/pcbbanner.jpg"
+          src="/ee-portfolio/pcbbanner.JPG"
           alt="PCB Banner"
           className="w-full h-full object-cover"
         />
