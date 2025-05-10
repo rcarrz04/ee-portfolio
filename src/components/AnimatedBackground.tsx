@@ -67,13 +67,17 @@ const AnimatedBackground = () => {
       text: string;
       alpha: number;
       growing: boolean;
+      angle: number;
+      radius: number;
+      speed: number;
 
       constructor() {
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height;
         this.text = equationTexts[Math.floor(Math.random() * equationTexts.length)];
         this.alpha = 0;
         this.growing = true;
+        this.angle = Math.random() * Math.PI * 2;
+        this.radius = 150 + Math.random() * 100; // Distance from center
+        this.speed = 0.001 + Math.random() * 0.002; // Rotation speed
       }
 
       update() {
@@ -88,6 +92,12 @@ const AnimatedBackground = () => {
             return false;
           }
         }
+
+        // Update position in circular motion
+        this.angle += this.speed;
+        this.x = canvas.width / 2 + Math.cos(this.angle) * this.radius;
+        this.y = canvas.height / 2 + Math.sin(this.angle) * this.radius;
+
         return true;
       }
 
