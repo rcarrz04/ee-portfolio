@@ -7,7 +7,7 @@ const Profile = () => {
         <img
           src="/ee-portfolio/headshot_Carrazco.JPEG"
           alt="Ruben Carrazco"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-[center_30%]"
         />
       </div>
       <div className="flex flex-col items-center space-y-2">
