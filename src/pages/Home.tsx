@@ -1,4 +1,7 @@
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
 import { TypeAnimation } from 'react-type-animation';
 import AnimatedBackground from "@/components/AnimatedBackground";
 
@@ -30,6 +33,16 @@ const sections = [
 ];
 
 const Home = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  const navItems = [
+    { name: "About", path: "/about" },
+    { name: "Resume", path: "/resume" },
+    { name: "Projects", path: "/projects" },
+    { name: "Contact", path: "/contact" },
+  ];
+
   return (
     <div className="min-h-screen bg-white">
       <div className="h-[60vh] relative">
@@ -56,31 +69,23 @@ const Home = () => {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="space-y-24">
-          {sections.map((section) => (
-            <Link 
-              key={section.title}
-              to={section.path}
-              className="group block"
-            >
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                <div className="h-64 overflow-hidden rounded-lg">
-                  <img
-                    src={section.image}
-                    alt={section.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <div>
-                  <h2 className="text-3xl font-medium mb-4 text-foreground group-hover:text-primary transition-colors">
-                    {section.title}
-                  </h2>
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    {section.description}
-                  </p>
-                </div>
-              </div>
-            </Link>
-          ))}
+          <div ref={ref} className="space-y-6">
+            {navItems.map((item, index) => (
+              <motion.div
+                key={item.name}
+                initial={{ x: -100, opacity: 0 }}
+                animate={isInView ? { x: 0, opacity: 1 } : { x: -100, opacity: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.2 }}
+              >
+                <Link
+                  to={item.path}
+                  className="block p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200"
+                >
+                  <h2 className="text-2xl font-medium text-gray-900">{item.name}</h2>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
