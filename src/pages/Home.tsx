@@ -41,11 +41,9 @@ const Home = () => {
           <div className="text-center space-y-4">
             <TypeAnimation
               sequence={[
-                'Hello my name is',
-                1000,
                 'Hello my name is\nRuben Carrazco',
                 1000,
-                'Hello my name is\nRuben Carrazco\nWelcome to my Engineering Portfolio',
+                'Hello my name is\nRuben Carrazco\n\nWelcome to my Engineering Portfolio',
                 1000,
               ]}
               wrapper="h1"
