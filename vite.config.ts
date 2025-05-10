@@ -19,7 +19,18 @@ export default defineConfig({
       output: {
         assetFileNames: "assets/[name][extname]",
       },
-      external: ['next-themes', 'lucide-react', 'class-variance-authority'],
+      external: [
+        'next-themes',
+        'lucide-react',
+        'class-variance-authority',
+        'tailwind-merge',
+        'clsx',
+        '@radix-ui/react-slot',
+        '@radix-ui/react-label',
+        '@radix-ui/react-dialog',
+        '@radix-ui/react-dropdown-menu',
+        '@radix-ui/react-avatar'
+      ],
     },
   },
 });
