@@ -43,9 +43,18 @@ const Contact = () => {
                 </a>
               </div>
             </div>
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h2 className="text-xl font-medium mb-4">Location</h2>
-              <p className="text-gray-600">Stanford University, CA</p>
+            <div className="space-y-6">
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <h2 className="text-xl font-medium mb-4">Location</h2>
+                <p className="text-gray-600">Stanford University, CA</p>
+              </div>
+              <div className="rounded-lg overflow-hidden">
+                <img
+                  src="/ee-portfolio/skydiving.jpg"
+                  alt="Skydiving"
+                  className="w-full h-64 object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
