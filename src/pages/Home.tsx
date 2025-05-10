@@ -30,7 +30,7 @@ const sections = [
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-background">
       <div className="h-[60vh] relative">
         <img
           src="/ee-portfolio/pcbbanner.jpg"
@@ -38,12 +38,12 @@ const Home = () => {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-          <div className="text-center space-y-4">
+          <div className="text-center space-y-2">
             <TypeAnimation
               sequence={[
                 'Hello my name is Ruben Carrazco',
                 1000,
-                'Hello my name is Ruben Carrazco\n\nWelcome to my Engineering Portfolio',
+                'Hello my name is Ruben Carrazco\nWelcome to my Engineering Portfolio',
                 1000,
               ]}
               wrapper="h1"
