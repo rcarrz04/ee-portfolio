@@ -5,7 +5,7 @@ const Profile = () => {
     <div className="flex flex-col items-center space-y-6">
       <div className="w-48 h-48 rounded-full overflow-hidden border-2 border-gray-100">
         <img
-          src="/headshot_Carrazco.JPEG"
+          src="/ee-portfolio/headshot_Carrazco.JPEG"
           alt="Ruben Carrazco"
           className="w-full h-full object-cover"
         />
