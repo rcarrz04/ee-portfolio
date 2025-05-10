@@ -14,9 +14,9 @@ const queryClient = new QueryClient();
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
         <Router>
-          <div className="min-h-screen bg-background">
+          <div className="min-h-screen bg-white">
             <Navbar />
             <Routes>
               <Route path="/" element={<Home />} />
