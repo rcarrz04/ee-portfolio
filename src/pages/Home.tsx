@@ -38,19 +38,19 @@ const Home = () => {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-          <div className="text-center">
+          <div className="text-center space-y-4">
             <TypeAnimation
               sequence={[
                 'Hello my name is',
                 1000,
-                'Ruben Carrazco',
+                'Hello my name is\nRuben Carrazco',
                 1000,
-                'Welcome to my Engineering Portfolio',
+                'Hello my name is\nRuben Carrazco\nWelcome to my Engineering Portfolio',
                 1000,
               ]}
               wrapper="h1"
               speed={50}
-              className="text-4xl font-bold text-white font-sfpro"
+              className="text-4xl font-bold text-white font-sfpro whitespace-pre-line"
               repeat={0}
             />
           </div>
