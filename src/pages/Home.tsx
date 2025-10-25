@@ -57,7 +57,7 @@ const Home = () => {
               wrapper="h1"
               speed={50}
               deletionSpeed={50}
-              className="text-4xl font-bold text-white font-sfpro whitespace-pre-line"
+              className="text-4xl font-bold text-black font-sfpro whitespace-pre-line"
               repeat={0}
               cursor={false}
             />
