@@ -71,7 +71,6 @@ const Home = () => {
                   sequence={[
                     3500,
                     'Electrical Engineering student focusing on augmented reality and next-generation VLSI hardware at Stanford.',
-                    2000,
                   ]}
                   wrapper="div"
                   speed={0}
