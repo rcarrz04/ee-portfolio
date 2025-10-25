@@ -5,35 +5,47 @@ import { useRef } from "react";
 import { TypeAnimation } from 'react-type-animation';
 import AnimatedBackground from "@/components/AnimatedBackground";
 
-const sections = [
+const projects = [
   {
-    title: "About",
-    path: "/about",
-    description: "Learn more about my background in Electrical Engineering and my passion for innovation.",
+    id: "smart-power-system",
+    title: "Smart Power System",
     image: "/ee-portfolio/headshot_Carrazco.JPEG",
+    skills: ["PCB Design", "Power Electronics", "Embedded C"],
   },
   {
-    title: "Projects",
-    path: "/projects",
-    description: "Explore my portfolio of electrical engineering projects, from power systems to IoT solutions.",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
+    id: "iot-sensor-network",
+    title: "IoT Sensor Network",
+    image: "/ee-portfolio/headshot_Carrazco.JPEG",
+    skills: ["RF Design", "Arduino", "IoT Protocols"],
   },
   {
-    title: "Resume",
-    path: "/resume",
-    description: "View my professional experience, education, and technical skills.",
-    image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=400&q=80",
+    id: "motor-controller",
+    title: "Motor Controller",
+    image: "/ee-portfolio/headshot_Carrazco.JPEG",
+    skills: ["Control Systems", "Power Electronics", "DSP"],
   },
   {
-    title: "Contact",
-    path: "/contact",
-    description: "Get in touch with me for collaborations or opportunities.",
-    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=400&q=80",
+    id: "energy-monitor",
+    title: "Energy Monitor",
+    image: "/ee-portfolio/headshot_Carrazco.JPEG",
+    skills: ["Analog Design", "Python", "Data Analysis"],
+  },
+  {
+    id: "battery-management",
+    title: "Battery Management",
+    image: "/ee-portfolio/headshot_Carrazco.JPEG",
+    skills: ["Power Systems", "C++", "Hardware Design"],
+  },
+  {
+    id: "led-matrix-display",
+    title: "LED Matrix Display",
+    image: "/ee-portfolio/headshot_Carrazco.JPEG",
+    skills: ["FPGA", "Verilog", "LED Drivers"],
   },
 ];
 
 const Home = () => {
-  const refs = sections.map(() => useRef(null));
+  const refs = projects.map(() => useRef(null));
   const inViews = refs.map(ref => useInView(ref, { 
     once: true,
     margin: "-100px 0px"
@@ -42,7 +54,7 @@ const Home = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <div className="h-[45vh] relative bg-slate-900">
+      <div className="h-[22.5vh] relative bg-slate-900">
         <AnimatedBackground />
         <div className="absolute inset-0 flex items-center justify-center z-20">
           <div className="text-center space-y-2">
@@ -94,38 +106,43 @@ const Home = () => {
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="space-y-8">
-          {sections.map((section, index) => (
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-medium mb-4">Featured Projects</h1>
+          <p className="text-lg text-gray-600">Explore my electrical engineering portfolio</p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
             <motion.div
-              key={section.title}
+              key={project.id}
               ref={refs[index]}
-              initial={{ x: -100, opacity: 0 }}
-              animate={inViews[index] ? { x: 0, opacity: 1 } : { x: -100, opacity: 0 }}
+              initial={{ y: 50, opacity: 0 }}
+              animate={inViews[index] ? { y: 0, opacity: 1 } : { y: 50, opacity: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Link
-                to={section.path}
-                className="group block bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200"
+              <Link 
+                to={`/projects/${project.id}`} 
+                className="group hover:scale-105 transition-transform duration-200 block"
               >
-                <div className="flex items-center p-4">
-                  <div className="w-32 h-32 flex-shrink-0 overflow-hidden rounded-lg">
+                <div className="flex flex-col items-center bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 p-6">
+                  <div className="w-32 h-32 rounded-full overflow-hidden mb-4 border-2 border-gray-100">
                     <img
-                      src={section.image}
-                      alt={section.title}
-                      className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ${
-                        section.title === "About" 
-                          ? "object-top scale-110" 
-                          : ""
-                      }`}
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover"
                     />
                   </div>
-                  <div className="ml-4">
-                    <h2 className="text-xl font-medium mb-2 text-gray-900 group-hover:text-primary transition-colors">
-                      {section.title}
-                    </h2>
-                    <p className="text-sm text-gray-600 leading-relaxed">
-                      {section.description}
-                    </p>
+                  <h3 className="text-lg font-medium text-center mb-2 group-hover:text-gray-600">
+                    {project.title}
+                  </h3>
+                  <div className="flex flex-wrap justify-center gap-2">
+                    {project.skills.map((skill, skillIndex) => (
+                      <span
+                        key={skillIndex}
+                        className="text-sm text-gray-600 bg-gray-100 px-3 py-1 rounded-full"
+                      >
+                        {skill}
+                      </span>
+                    ))}
                   </div>
                 </div>
               </Link>
