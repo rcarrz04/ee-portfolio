@@ -63,10 +63,10 @@ const AnimatedBackground = () => {
   }, []);
 
   return (
-    <div className="absolute inset-0 w-full h-full bg-slate-900">
+    <div className="absolute inset-0 w-full h-full bg-slate-900 z-0">
       <canvas
         ref={canvasRef}
-        className="absolute inset-0 w-full h-full opacity-30 -z-10"
+        className="absolute inset-0 w-full h-full opacity-30 z-0"
       />
     </div>
   );
