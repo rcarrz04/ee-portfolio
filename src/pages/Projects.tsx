@@ -3,40 +3,28 @@ import Profile from "../components/Profile";
 
 const projects = [
   {
-    id: "power-electronics-lab",
-    title: "Power Electronics Lab",
+    id: "wearable-vr-glove",
+    title: "Wearable VR Glove",
     image: "/ee-portfolio/headshot_Carrazco.JPEG",
-    skills: ["DC-DC Converters", "MOSFET Design", "LTspice"],
+    skills: ["Teensy-ESP32", "Unity", "ESP-NOW"],
   },
   {
-    id: "microcontroller-project",
-    title: "Microcontroller Project",
+    id: "ac-dc-converter",
+    title: "AC to DC Converter",
     image: "/ee-portfolio/headshot_Carrazco.JPEG",
-    skills: ["Arduino", "C Programming", "Sensors"],
+    skills: ["Full-Bridge", "LTspice", "Oscilloscope"],
   },
   {
-    id: "circuit-analysis",
-    title: "Circuit Analysis",
+    id: "music-synthesizer",
+    title: "Enhanced Music Synthesizer",
     image: "/ee-portfolio/headshot_Carrazco.JPEG",
-    skills: ["AC/DC Analysis", "MATLAB", "Simulink"],
+    skills: ["Verilog", "FPGA", "VGA"],
   },
   {
-    id: "digital-signal-processing",
-    title: "Digital Signal Processing",
+    id: "simd-gemm-accelerator",
+    title: "SIMD GEMM Accelerator",
     image: "/ee-portfolio/headshot_Carrazco.JPEG",
-    skills: ["Filter Design", "FFT", "Python"],
-  },
-  {
-    id: "control-systems",
-    title: "Control Systems",
-    image: "/ee-portfolio/headshot_Carrazco.JPEG",
-    skills: ["PID Control", "State Space", "MATLAB"],
-  },
-  {
-    id: "embedded-systems",
-    title: "Embedded Systems",
-    image: "/ee-portfolio/headshot_Carrazco.JPEG",
-    skills: ["ARM Cortex", "RTOS", "Debugging"],
+    skills: ["SystemVerilog", "C/C++", "VLSI"],
   },
 ];
 
