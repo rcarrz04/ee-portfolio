@@ -9,7 +9,7 @@ const projects = [
   {
     id: "wearable-vr-glove",
     title: "Wearable VR Glove",
-    image: "/ee-portfolio/headshot_Carrazco.JPEG",
+    image: "/ee-portfolio/vr-glove.jpg",
     skills: ["Teensy-ESP32", "Unity", "ESP-NOW"],
   },
   {
@@ -67,7 +67,14 @@ const Home = () => {
                   repeat={0}
                   cursor={false}
                 />
-                <div
+                <TypeAnimation
+                  sequence={[
+                    '',
+                    3500,
+                    'Electrical Engineering student focusing on augmented reality and next-generation VLSI hardware at Stanford.',
+                  ]}
+                  wrapper="div"
+                  speed={999}
                   className="banner-text"
                   style={{
                     fontSize: '1.25rem', // 20px - smaller than top line
@@ -75,13 +82,11 @@ const Home = () => {
                     color: 'white',
                     fontFamily: 'SF Pro Display, system-ui, sans-serif',
                     lineHeight: '1.3',
-                    marginTop: '0.5rem',
-                    opacity: 0,
-                    animation: 'fadeIn 0.5s ease-in-out 3.5s forwards'
+                    marginTop: '0.5rem'
                   }}
-                >
-                  Electrical Engineering student focusing on augmented reality and next-generation VLSI hardware at Stanford.
-                </div>
+                  repeat={0}
+                  cursor={false}
+                />
               </div>
             </div>
           </div>

@@ -15,7 +15,7 @@ const projects: Record<string, Project> = {
   "wearable-vr-glove": {
     id: "wearable-vr-glove",
     title: "Wearable VR Glove",
-    image: "https://images.unsplash.com/photo-1592478411213-6153e4c4c8f0",
+    image: "/ee-portfolio/vr-glove.jpg",
     overview: "A wireless microcontroller-based glove integrating flex sensors and an IMU for real-time gesture-based control in Unity.",
     skills: ["Teensy-ESP32", "Unity", "ESP-NOW", "Flex Sensors", "IMU", "Quaternion Tracking"],
     description: "Built a wireless microcontroller-based glove integrating flex sensors and an IMU for real-time gesture-based control in Unity, achieving <50 ms latency and seamless head-tracked interaction. Programmed a Teensy–ESP32 system using ESP-NOW and quaternion-based tracking, reaching ~86% average gesture classification accuracy without reliance on cameras or external controllers. This project demonstrates advanced embedded systems design, wireless communication protocols, and real-time signal processing for VR applications.",
