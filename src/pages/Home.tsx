@@ -60,9 +60,16 @@ const Home = () => {
                 ]}
                 wrapper="div"
                 speed={50}
-                className="text-center whitespace-pre-line banner-text"
+                className="text-center whitespace-pre-line"
+                style={{
+                  fontSize: '2.25rem',
+                  fontWeight: 'bold',
+                  color: 'white',
+                  fontFamily: 'SF Pro Display, system-ui, sans-serif',
+                  lineHeight: '1.2'
+                }}
                 repeat={0}
-                cursor={false}
+                cursor={true}
               />
             </div>
           </div>
