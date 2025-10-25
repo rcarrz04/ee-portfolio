@@ -48,6 +48,8 @@ const Home = () => {
             <div className="space-y-4">
               <TypeAnimation
                 sequence={[
+                  '',
+                  1500,
                   'Hello my name is Ruben Carrazco',
                   2000,
                 ]}
