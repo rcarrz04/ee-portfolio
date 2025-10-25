@@ -39,13 +39,22 @@ const Home = () => {
     margin: "-100px 0px"
   }));
   
+  const [showTopLine, setShowTopLine] = useState(false);
   const [showBottomLine, setShowBottomLine] = useState(false);
   
   useEffect(() => {
-    const timer = setTimeout(() => {
+    const timer1 = setTimeout(() => {
+      setShowTopLine(true);
+    }, 1500);
+    
+    const timer2 = setTimeout(() => {
       setShowBottomLine(true);
     }, 3500);
-    return () => clearTimeout(timer);
+    
+    return () => {
+      clearTimeout(timer1);
+      clearTimeout(timer2);
+    };
   }, []);
 
 
@@ -56,26 +65,36 @@ const Home = () => {
           <div className="text-center space-y-2">
             <div className="space-y-4">
               <div className="text-center space-y-2">
-                <TypeAnimation
-                  sequence={[
-                    '',
-                    1500,
-                    'Hello my name is Ruben Carrazco',
-                    2000,
-                  ]}
-                  wrapper="div"
-                  speed={50}
-                  className="banner-text"
-                  style={{
-                    fontSize: '1.875rem', // 30px
-                    fontWeight: 'bold',
-                    color: 'white',
-                    fontFamily: 'SF Pro Display, system-ui, sans-serif',
-                    lineHeight: '1.2'
-                  }}
-                  repeat={0}
-                  cursor={false}
-                />
+                {showTopLine && (
+                  <motion.div
+                    className="banner-text"
+                    initial={{ 
+                      opacity: 0, 
+                      scale: 0.5, 
+                      y: 20 
+                    }}
+                    animate={{ 
+                      opacity: 1, 
+                      scale: 1, 
+                      y: 0 
+                    }}
+                    transition={{
+                      type: "spring",
+                      stiffness: 300,
+                      damping: 20,
+                      duration: 0.6
+                    }}
+                    style={{
+                      fontSize: '1.875rem', // 30px
+                      fontWeight: 'bold',
+                      color: 'white',
+                      fontFamily: 'SF Pro Display, system-ui, sans-serif',
+                      lineHeight: '1.2'
+                    }}
+                  >
+                    Hello my name is Ruben Carrazco
+                  </motion.div>
+                )}
                 {showBottomLine && (
                   <motion.div
                     className="banner-text"
