@@ -110,11 +110,12 @@ const ProjectDetail = () => {
               {project.id === "wearable-vr-glove" && (
                 <div className="mt-8">
                   <h3 className="text-xl font-semibold mb-4 text-gray-900">Project Report</h3>
-                  <div className="w-full h-[800px] border border-gray-200 rounded-lg overflow-hidden">
+                  <div className="w-full h-[100vh] border border-gray-200 rounded-lg overflow-hidden">
                     <iframe
-                      src="./wearable vr glove report.pdf"
+                      src="./wearable vr glove report.pdf#toolbar=1&navpanes=1&scrollbar=1"
                       className="w-full h-full"
                       title="Wearable VR Glove Report"
+                      style={{ minHeight: '800px' }}
                     />
                   </div>
                 </div>
