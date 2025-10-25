@@ -22,19 +22,15 @@ const AnimatedBackground = () => {
     let time = 0;
     const waveAmplitude = canvas.height * 0.3;
     const waveFrequency = 0.02;
-    const waveSpeed = 0.05;
+    const waveSpeed = 0.01;
 
     // Draw oscilloscope background
     const drawOscilloscope = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       
-      // Debug: Draw a simple test rectangle
-      ctx.fillStyle = 'rgba(255, 0, 0, 0.3)';
-      ctx.fillRect(50, 50, 100, 100);
-      
       // Draw grid lines (oscilloscope style)
-      ctx.strokeStyle = 'rgba(255, 255, 255, 0.3)';
-      ctx.lineWidth = 2;
+      ctx.strokeStyle = 'rgba(255, 255, 255, 0.1)';
+      ctx.lineWidth = 1;
       
       // Vertical grid lines
       for (let x = 0; x < canvas.width; x += 50) {
