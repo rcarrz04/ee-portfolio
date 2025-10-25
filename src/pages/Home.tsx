@@ -39,19 +39,28 @@ const Home = () => {
     margin: "-100px 0px"
   }));
 
-  console.log("Home component is rendering");
 
   return (
     <div className="min-h-screen bg-white">
-      <div className="h-[45vh] relative bg-slate-900 border-4 border-red-500">
+      <div className="h-[45vh] relative bg-slate-900">
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center space-y-2">
-            <h1 className="text-4xl font-bold text-white font-sfpro">
-              Hello my name is Ruben Carrazco
-            </h1>
-            <h2 className="text-2xl text-white">
-              Welcome to my Engineering Portfolio
-            </h2>
+            <TypeAnimation
+              sequence={[
+                'Hello my name is Ruben Carrazco',
+                2000,
+                '',
+                1000,
+                'Welcome to my Engineering Portfolio',
+                2000,
+              ]}
+              wrapper="h1"
+              speed={50}
+              deletionSpeed={50}
+              className="text-4xl font-bold text-white font-sfpro whitespace-pre-line"
+              repeat={0}
+              cursor={false}
+            />
           </div>
         </div>
       </div>
