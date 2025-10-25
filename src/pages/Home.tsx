@@ -39,9 +39,11 @@ const Home = () => {
     margin: "-100px 0px"
   }));
 
+  console.log("Home component is rendering");
+
   return (
     <div className="min-h-screen bg-white">
-      <div className="h-[45vh] relative bg-slate-900">
+      <div className="h-[45vh] relative bg-slate-900 border-4 border-red-500">
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center space-y-2">
             <h1 className="text-4xl font-bold text-white font-sfpro">
