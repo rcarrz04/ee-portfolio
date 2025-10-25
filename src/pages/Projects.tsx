@@ -3,40 +3,40 @@ import Profile from "../components/Profile";
 
 const projects = [
   {
-    id: "smart-power-system",
-    title: "Smart Power System",
+    id: "power-electronics-lab",
+    title: "Power Electronics Lab",
     image: "/ee-portfolio/headshot_Carrazco.JPEG",
-    skills: ["PCB Design", "Power Electronics", "Embedded C"],
+    skills: ["DC-DC Converters", "MOSFET Design", "LTspice"],
   },
   {
-    id: "iot-sensor-network",
-    title: "IoT Sensor Network",
+    id: "microcontroller-project",
+    title: "Microcontroller Project",
     image: "/ee-portfolio/headshot_Carrazco.JPEG",
-    skills: ["RF Design", "Arduino", "IoT Protocols"],
+    skills: ["Arduino", "C Programming", "Sensors"],
   },
   {
-    id: "motor-controller",
-    title: "Motor Controller",
+    id: "circuit-analysis",
+    title: "Circuit Analysis",
     image: "/ee-portfolio/headshot_Carrazco.JPEG",
-    skills: ["Control Systems", "Power Electronics", "DSP"],
+    skills: ["AC/DC Analysis", "MATLAB", "Simulink"],
   },
   {
-    id: "energy-monitor",
-    title: "Energy Monitor",
+    id: "digital-signal-processing",
+    title: "Digital Signal Processing",
     image: "/ee-portfolio/headshot_Carrazco.JPEG",
-    skills: ["Analog Design", "Python", "Data Analysis"],
+    skills: ["Filter Design", "FFT", "Python"],
   },
   {
-    id: "battery-management",
-    title: "Battery Management",
+    id: "control-systems",
+    title: "Control Systems",
     image: "/ee-portfolio/headshot_Carrazco.JPEG",
-    skills: ["Power Systems", "C++", "Hardware Design"],
+    skills: ["PID Control", "State Space", "MATLAB"],
   },
   {
-    id: "led-matrix-display",
-    title: "LED Matrix Display",
+    id: "embedded-systems",
+    title: "Embedded Systems",
     image: "/ee-portfolio/headshot_Carrazco.JPEG",
-    skills: ["FPGA", "Verilog", "LED Drivers"],
+    skills: ["ARM Cortex", "RTOS", "Debugging"],
   },
 ];
 
