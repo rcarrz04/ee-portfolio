@@ -43,6 +43,7 @@ const Home = () => {
   
   useEffect(() => {
     const timer = setTimeout(() => {
+      console.log('Setting showBottomLine to true');
       setShowBottomLine(true);
     }, 3500);
     return () => clearTimeout(timer);
@@ -88,6 +89,8 @@ const Home = () => {
                       marginTop: '0.5rem',
                       animation: 'popIn 0.6s ease-out'
                     }}
+                    onAnimationStart={() => console.log('Animation started')}
+                    onAnimationEnd={() => console.log('Animation ended')}
                   >
                     Electrical Engineering student focusing on augmented reality and next-generation VLSI hardware at Stanford.
                   </div>
