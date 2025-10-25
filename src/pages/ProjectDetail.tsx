@@ -105,6 +105,20 @@ const ProjectDetail = () => {
               <div className="prose max-w-none">
                 <p className="text-gray-600">{project.description}</p>
               </div>
+              
+              {/* PDF Viewer for VR Glove Project */}
+              {project.id === "wearable-vr-glove" && (
+                <div className="mt-8">
+                  <h3 className="text-xl font-semibold mb-4 text-gray-900">Project Report</h3>
+                  <div className="w-full h-96 border border-gray-200 rounded-lg overflow-hidden">
+                    <iframe
+                      src="./wearable vr glove report.pdf"
+                      className="w-full h-full"
+                      title="Wearable VR Glove Report"
+                    />
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>
