@@ -28,9 +28,13 @@ const AnimatedBackground = () => {
     const drawOscilloscope = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       
+      // Debug: Draw a simple test rectangle
+      ctx.fillStyle = 'rgba(255, 0, 0, 0.3)';
+      ctx.fillRect(50, 50, 100, 100);
+      
       // Draw grid lines (oscilloscope style)
-      ctx.strokeStyle = 'rgba(255, 255, 255, 0.1)';
-      ctx.lineWidth = 1;
+      ctx.strokeStyle = 'rgba(255, 255, 255, 0.3)';
+      ctx.lineWidth = 2;
       
       // Vertical grid lines
       for (let x = 0; x < canvas.width; x += 50) {
@@ -101,7 +105,8 @@ const AnimatedBackground = () => {
     <div className="absolute inset-0 w-full h-full bg-slate-900 z-0">
       <canvas
         ref={canvasRef}
-        className="absolute inset-0 w-full h-full opacity-40 z-0"
+        className="absolute inset-0 w-full h-full opacity-60 z-0"
+        style={{ background: 'transparent' }}
       />
     </div>
   );
