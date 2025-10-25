@@ -55,7 +55,7 @@ const Home = () => {
                 speed={50}
                 className="text-4xl font-bold text-white font-sfpro"
                 repeat={0}
-                cursor={false}
+                cursor={true}
               />
               <TypeAnimation
                 sequence={[
@@ -67,7 +67,7 @@ const Home = () => {
                 speed={50}
                 className="text-2xl font-bold text-white font-sfpro"
                 repeat={0}
-                cursor={true}
+                cursor={false}
               />
             </div>
           </div>
