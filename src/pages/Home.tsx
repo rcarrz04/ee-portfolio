@@ -45,11 +45,11 @@ const Home = () => {
   useEffect(() => {
     const timer1 = setTimeout(() => {
       setShowTopLine(true);
-    }, 1500);
+    }, 500);
     
     const timer2 = setTimeout(() => {
       setShowBottomLine(true);
-    }, 3500);
+    }, 1200);
     
     return () => {
       clearTimeout(timer1);
