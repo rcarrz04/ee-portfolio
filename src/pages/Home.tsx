@@ -51,7 +51,7 @@ const Home = () => {
                   sequence={[
                     '',
                     1500,
-                    'Welcome to my Engineering Portfolio',
+                    'Hello my name is Ruben Carrazco',
                     2000,
                   ]}
                   wrapper="div"
@@ -63,6 +63,26 @@ const Home = () => {
                     color: 'white',
                     fontFamily: 'SF Pro Display, system-ui, sans-serif',
                     lineHeight: '1.2'
+                  }}
+                  repeat={0}
+                  cursor={false}
+                />
+                <TypeAnimation
+                  sequence={[
+                    3500,
+                    'Electrical Engineering student at Stanford focused on augmented reality and next-generation VLSI hardware.',
+                    2000,
+                  ]}
+                  wrapper="div"
+                  speed={50}
+                  className="banner-text"
+                  style={{
+                    fontSize: '1.25rem', // 20px - smaller than top line
+                    fontWeight: 'normal',
+                    color: 'white',
+                    fontFamily: 'SF Pro Display, system-ui, sans-serif',
+                    lineHeight: '1.3',
+                    marginTop: '0.5rem'
                   }}
                   repeat={0}
                   cursor={false}
