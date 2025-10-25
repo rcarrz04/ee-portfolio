@@ -47,30 +47,38 @@ const Home = () => {
         <div className="absolute inset-0 flex items-center justify-center z-20">
           <div className="text-center space-y-2">
             <div className="space-y-4">
-              <TypeAnimation
-                sequence={[
-                  '',
-                  1500,
-                  'Hello my name is Ruben Carrazco',
-                  2000,
-                  'Hello my name is Ruben Carrazco',
-                  1000,
-                  'Hello my name is Ruben Carrazco\nWelcome to my Engineering Portfolio',
-                  2000,
-                ]}
-                wrapper="div"
-                speed={50}
-                className="text-center whitespace-pre-line"
-                style={{
-                  fontSize: '1.875rem',
-                  fontWeight: 'bold',
-                  color: 'white',
-                  fontFamily: 'SF Pro Display, system-ui, sans-serif',
-                  lineHeight: '1.2'
-                }}
-                repeat={0}
-                cursor={true}
-              />
+              <div className="text-center whitespace-pre-line" style={{
+                fontSize: '1.875rem',
+                fontWeight: 'bold',
+                color: 'white',
+                fontFamily: 'SF Pro Display, system-ui, sans-serif',
+                lineHeight: '1.2'
+              }}>
+                <TypeAnimation
+                  sequence={[
+                    '',
+                    1500,
+                    'Hello my name is Ruben Carrazco',
+                    2000,
+                    'Hello my name is Ruben Carrazco',
+                    1000,
+                    'Hello my name is Ruben Carrazco\nWelcome to my Engineering Portfolio',
+                    2000,
+                  ]}
+                  wrapper="div"
+                  speed={50}
+                  className="banner-text"
+                  style={{
+                    fontSize: '1.875rem', // 30px for first line
+                    fontWeight: 'bold',
+                    color: 'white',
+                    fontFamily: 'SF Pro Display, system-ui, sans-serif',
+                    lineHeight: '1.2'
+                  }}
+                  repeat={0}
+                  cursor={true}
+                />
+              </div>
             </div>
           </div>
         </div>
