@@ -45,22 +45,31 @@ const Home = () => {
       <div className="h-[45vh] relative bg-slate-900">
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center space-y-2">
-            <TypeAnimation
-              sequence={[
-                'Hello my name is Ruben Carrazco',
-                2000,
-                '',
-                1000,
-                'Welcome to my Engineering Portfolio',
-                2000,
-              ]}
-              wrapper="h1"
-              speed={50}
-              deletionSpeed={50}
-              className="text-4xl font-bold text-white font-sfpro whitespace-pre-line"
-              repeat={0}
-              cursor={false}
-            />
+            <div className="space-y-4">
+              <TypeAnimation
+                sequence={[
+                  'Hello my name is Ruben Carrazco',
+                  2000,
+                ]}
+                wrapper="h1"
+                speed={50}
+                className="text-4xl font-bold text-white font-sfpro"
+                repeat={0}
+                cursor={true}
+              />
+              <TypeAnimation
+                sequence={[
+                  3000,
+                  'Welcome to my Engineering Portfolio',
+                  2000,
+                ]}
+                wrapper="h2"
+                speed={50}
+                className="text-2xl text-white font-sfpro"
+                repeat={0}
+                cursor={true}
+              />
+            </div>
           </div>
         </div>
       </div>
