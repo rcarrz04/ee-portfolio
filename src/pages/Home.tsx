@@ -66,7 +66,7 @@ const Home = () => {
                     lineHeight: '1.2'
                   }}
                   repeat={0}
-                  cursor={true}
+                  cursor={false}
                 />
                 <TypeAnimation
                   sequence={[
