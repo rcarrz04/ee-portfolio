@@ -43,17 +43,13 @@ const Home = () => {
   const [showBottomLine, setShowBottomLine] = useState(false);
   
   useEffect(() => {
-    const timer1 = setTimeout(() => {
+    const timer = setTimeout(() => {
       setShowTopLine(true);
+      setShowBottomLine(true);
     }, 500);
     
-    const timer2 = setTimeout(() => {
-      setShowBottomLine(true);
-    }, 1200);
-    
     return () => {
-      clearTimeout(timer1);
-      clearTimeout(timer2);
+      clearTimeout(timer);
     };
   }, []);
 
