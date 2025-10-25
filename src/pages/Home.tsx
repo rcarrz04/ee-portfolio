@@ -96,7 +96,11 @@ const Home = () => {
                     <img
                       src={section.image}
                       alt={section.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ${
+                        section.title === "About" 
+                          ? "object-top scale-110" 
+                          : ""
+                      }`}
                     />
                   </div>
                   <div className="ml-4">
