@@ -74,35 +74,35 @@ const Navbar = () => {
               <Link 
                 to="/" 
                 onClick={closeMenu}
-                className="block font-sfpro text-gray-900 hover:text-gray-600 transition-colors bg-gray-100 px-4 py-3 rounded-lg"
+                className="block font-sfpro text-gray-900 hover:text-gray-600 transition-colors bg-white px-4 py-3 rounded-lg"
               >
                 Home
               </Link>
               <Link 
                 to="/about" 
                 onClick={closeMenu}
-                className="block font-sfpro text-gray-900 hover:text-gray-600 transition-colors bg-gray-100 px-4 py-3 rounded-lg"
+                className="block font-sfpro text-gray-900 hover:text-gray-600 transition-colors bg-white px-4 py-3 rounded-lg"
               >
                 About
               </Link>
               <Link 
                 to="/projects" 
                 onClick={closeMenu}
-                className="block font-sfpro text-gray-900 hover:text-gray-600 transition-colors bg-gray-100 px-4 py-3 rounded-lg"
+                className="block font-sfpro text-gray-900 hover:text-gray-600 transition-colors bg-white px-4 py-3 rounded-lg"
               >
                 Projects
               </Link>
               <Link 
                 to="/resume" 
                 onClick={closeMenu}
-                className="block font-sfpro text-gray-900 hover:text-gray-600 transition-colors bg-gray-100 px-4 py-3 rounded-lg"
+                className="block font-sfpro text-gray-900 hover:text-gray-600 transition-colors bg-white px-4 py-3 rounded-lg"
               >
                 Resume
               </Link>
               <Link 
                 to="/contact" 
                 onClick={closeMenu}
-                className="block font-sfpro text-gray-900 hover:text-gray-600 transition-colors bg-gray-100 px-4 py-3 rounded-lg"
+                className="block font-sfpro text-gray-900 hover:text-gray-600 transition-colors bg-white px-4 py-3 rounded-lg"
               >
                 Contact
               </Link>
