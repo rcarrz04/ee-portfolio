@@ -47,29 +47,38 @@ const Home = () => {
         <div className="absolute inset-0 flex items-center justify-center z-20">
           <div className="text-center space-y-2">
             <div className="space-y-4">
-              <div className="text-center whitespace-pre-line" style={{
-                fontSize: '1.875rem',
-                fontWeight: 'bold',
-                color: 'white',
-                fontFamily: 'SF Pro Display, system-ui, sans-serif',
-                lineHeight: '1.2'
-              }}>
+              <div className="text-center space-y-2">
                 <TypeAnimation
                   sequence={[
                     '',
                     1500,
                     'Hello my name is Ruben Carrazco',
                     2000,
-                    'Hello my name is Ruben Carrazco',
-                    1000,
-                    'Hello my name is Ruben Carrazco\nWelcome to my Engineering Portfolio',
+                  ]}
+                  wrapper="div"
+                  speed={50}
+                  className="banner-text"
+                  style={{
+                    fontSize: '1.875rem', // 30px
+                    fontWeight: 'bold',
+                    color: 'white',
+                    fontFamily: 'SF Pro Display, system-ui, sans-serif',
+                    lineHeight: '1.2'
+                  }}
+                  repeat={0}
+                  cursor={true}
+                />
+                <TypeAnimation
+                  sequence={[
+                    3500,
+                    'Welcome to my Engineering Portfolio',
                     2000,
                   ]}
                   wrapper="div"
                   speed={50}
                   className="banner-text"
                   style={{
-                    fontSize: '1.875rem', // 30px for first line
+                    fontSize: '1.625rem', // 26px
                     fontWeight: 'bold',
                     color: 'white',
                     fontFamily: 'SF Pro Display, system-ui, sans-serif',
