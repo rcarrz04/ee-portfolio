@@ -55,7 +55,7 @@ const Home = () => {
 
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white dark:bg-gray-900">
       <div className="h-[45vh] relative bg-slate-900 pt-16">
         <div className="absolute inset-0 flex items-center justify-center z-20">
           <div className="text-center space-y-2">
@@ -130,8 +130,8 @@ const Home = () => {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-medium mb-4">Featured Projects</h1>
-          <p className="text-lg text-gray-600">Explore my electrical engineering portfolio</p>
+          <h1 className="text-4xl font-medium mb-4 text-gray-900 dark:text-white">Featured Projects</h1>
+          <p className="text-lg text-gray-600 dark:text-gray-400">Explore my electrical engineering portfolio</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
@@ -146,22 +146,22 @@ const Home = () => {
                 to={`/projects/${project.id}`} 
                 className="group hover:scale-105 transition-transform duration-200 block"
               >
-                <div className="flex flex-col items-center bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 p-6">
-                  <div className="w-32 h-32 rounded-full overflow-hidden mb-4 border-2 border-gray-100">
+                <div className="flex flex-col items-center bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 p-6">
+                  <div className="w-32 h-32 rounded-full overflow-hidden mb-4 border-2 border-gray-100 dark:border-gray-700">
                     <img
                       src={project.image}
                       alt={project.title}
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h3 className="text-lg font-medium text-center mb-2 group-hover:text-gray-600">
+                  <h3 className="text-lg font-medium text-center mb-2 group-hover:text-gray-600 dark:group-hover:text-gray-300 text-gray-900 dark:text-white">
                     {project.title}
                   </h3>
                   <div className="flex flex-wrap justify-center gap-2">
                     {project.skills.map((skill, skillIndex) => (
                       <span
                         key={skillIndex}
-                        className="text-sm text-gray-600 bg-gray-100 px-3 py-1 rounded-full"
+                        className="text-sm text-gray-600 dark:text-gray-300 bg-gray-100 dark:bg-gray-700 px-3 py-1 rounded-full"
                       >
                         {skill}
                       </span>
