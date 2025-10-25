@@ -48,3 +48,12 @@
   font-family: 'SF Pro Display', system-ui, sans-serif;
   line-height: 1.2;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
