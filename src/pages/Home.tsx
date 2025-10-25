@@ -79,15 +79,14 @@ const Home = () => {
                 />
                 {showBottomLine && (
                   <div
-                    className="banner-text"
+                    className="banner-text banner-text-pop"
                     style={{
                       fontSize: '1.25rem', // 20px - smaller than top line
                       fontWeight: 'normal',
                       color: 'white',
                       fontFamily: 'SF Pro Display, system-ui, sans-serif',
                       lineHeight: '1.3',
-                      marginTop: '0.5rem',
-                      animation: 'popIn 0.6s ease-out'
+                      marginTop: '0.5rem'
                     }}
                     onAnimationStart={() => console.log('Animation started')}
                     onAnimationEnd={() => console.log('Animation ended')}
