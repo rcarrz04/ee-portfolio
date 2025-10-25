@@ -85,7 +85,8 @@ const Home = () => {
                       color: 'white',
                       fontFamily: 'SF Pro Display, system-ui, sans-serif',
                       lineHeight: '1.3',
-                      marginTop: '0.5rem'
+                      marginTop: '0.5rem',
+                      animation: 'popIn 0.6s ease-out'
                     }}
                   >
                     Electrical Engineering student focusing on augmented reality and next-generation VLSI hardware at Stanford.
