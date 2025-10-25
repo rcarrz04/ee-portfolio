@@ -50,6 +50,8 @@ const Home = () => {
                 sequence={[
                   'Hello my name is Ruben Carrazco',
                   2000,
+                  '',
+                  1000,
                 ]}
                 wrapper="h1"
                 speed={50}
@@ -65,9 +67,9 @@ const Home = () => {
                 ]}
                 wrapper="h2"
                 speed={50}
-                className="text-2xl text-white font-sfpro"
+                className="text-2xl font-bold text-white font-sfpro"
                 repeat={0}
-                cursor={true}
+                cursor={false}
               />
             </div>
           </div>
