@@ -104,7 +104,7 @@ const Home = () => {
                       marginTop: '0.5rem'
                     }}
                   >
-                    Electrical Engineering student focusing on augmented reality and next-generation VLSI hardware at Stanford.
+                    EE @ Stanford: Focusing on augmented reality and next-generation VLSI hardware
                   </motion.div>
                 )}
               </div>
