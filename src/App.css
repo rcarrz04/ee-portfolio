@@ -40,3 +40,27 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Banner animation styles */
+.banner-text {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: white;
+  font-family: 'SF Pro Display', system-ui, sans-serif;
+  line-height: 1.2;
+}
+
+.banner-text::after {
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 1.2em;
+  background-color: white;
+  margin-left: 2px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}

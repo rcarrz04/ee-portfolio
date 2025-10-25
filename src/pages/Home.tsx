@@ -53,20 +53,16 @@ const Home = () => {
                   1500,
                   'Hello my name is Ruben Carrazco',
                   2000,
+                  'Hello my name is Ruben Carrazco',
+                  1500,
                   'Hello my name is Ruben Carrazco\nWelcome to my Engineering Portfolio',
                   2000,
                 ]}
                 wrapper="div"
                 speed={50}
-                className="text-center whitespace-pre-line"
-                style={{
-                  fontSize: '2.25rem',
-                  fontWeight: 'bold',
-                  color: 'white',
-                  fontFamily: 'SF Pro Display, system-ui, sans-serif'
-                }}
+                className="text-center whitespace-pre-line banner-text"
                 repeat={0}
-                cursor={true}
+                cursor={false}
               />
             </div>
           </div>
