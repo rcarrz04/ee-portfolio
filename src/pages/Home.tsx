@@ -57,11 +57,11 @@ const Home = () => {
                 speed={50}
                 className="text-4xl font-bold text-white font-sfpro"
                 repeat={0}
-                cursor={true}
+                cursor={false}
               />
               <TypeAnimation
                 sequence={[
-                  2000,
+                  5000,
                   'Welcome to my Engineering Portfolio',
                   2000,
                 ]}
@@ -69,7 +69,7 @@ const Home = () => {
                 speed={50}
                 className="text-2xl font-bold text-white font-sfpro"
                 repeat={0}
-                cursor={false}
+                cursor={true}
               />
             </div>
           </div>
