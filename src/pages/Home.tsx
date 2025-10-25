@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useInView } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import { TypeAnimation } from 'react-type-animation';
 import AnimatedBackground from "@/components/AnimatedBackground";
 
@@ -9,7 +9,7 @@ const projects = [
   {
     id: "wearable-vr-glove",
     title: "Wearable VR Glove",
-    image: "/ee-portfolio/vr-glove.jpg",
+    image: "/ee-portfolio/vr_glove.JPG",
     skills: ["Teensy-ESP32", "Unity", "ESP-NOW"],
   },
   {
@@ -38,6 +38,15 @@ const Home = () => {
     once: true,
     margin: "-100px 0px"
   }));
+  
+  const [showBottomLine, setShowBottomLine] = useState(false);
+  
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowBottomLine(true);
+    }, 3500);
+    return () => clearTimeout(timer);
+  }, []);
 
 
   return (
@@ -67,26 +76,21 @@ const Home = () => {
                   repeat={0}
                   cursor={false}
                 />
-                <TypeAnimation
-                  sequence={[
-                    '',
-                    3500,
-                    'Electrical Engineering student focusing on augmented reality and next-generation VLSI hardware at Stanford.',
-                  ]}
-                  wrapper="div"
-                  speed={999}
-                  className="banner-text"
-                  style={{
-                    fontSize: '1.25rem', // 20px - smaller than top line
-                    fontWeight: 'normal',
-                    color: 'white',
-                    fontFamily: 'SF Pro Display, system-ui, sans-serif',
-                    lineHeight: '1.3',
-                    marginTop: '0.5rem'
-                  }}
-                  repeat={0}
-                  cursor={false}
-                />
+                {showBottomLine && (
+                  <div
+                    className="banner-text"
+                    style={{
+                      fontSize: '1.25rem', // 20px - smaller than top line
+                      fontWeight: 'normal',
+                      color: 'white',
+                      fontFamily: 'SF Pro Display, system-ui, sans-serif',
+                      lineHeight: '1.3',
+                      marginTop: '0.5rem'
+                    }}
+                  >
+                    Electrical Engineering student focusing on augmented reality and next-generation VLSI hardware at Stanford.
+                  </div>
+                )}
               </div>
             </div>
           </div>

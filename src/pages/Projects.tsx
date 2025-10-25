@@ -5,7 +5,7 @@ const projects = [
   {
     id: "wearable-vr-glove",
     title: "Wearable VR Glove",
-    image: "/ee-portfolio/vr-glove.jpg",
+    image: "/ee-portfolio/vr_glove.JPG",
     skills: ["Teensy-ESP32", "Unity", "ESP-NOW"],
   },
   {
