@@ -70,11 +70,11 @@ const Home = () => {
                 <TypeAnimation
                   sequence={[
                     3500,
-                    'Electrical Engineering student at Stanford focused on augmented reality and next-generation VLSI hardware.',
+                    'Electrical Engineering student focusing on augmented reality and next-generation VLSI hardware at Stanford.',
                     2000,
                   ]}
                   wrapper="div"
-                  speed={50}
+                  speed={0}
                   className="banner-text"
                   style={{
                     fontSize: '1.25rem', // 20px - smaller than top line
