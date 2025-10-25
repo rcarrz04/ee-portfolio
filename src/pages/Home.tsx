@@ -54,7 +54,7 @@ const Home = () => {
                   'Hello my name is Ruben Carrazco',
                   2000,
                   'Hello my name is Ruben Carrazco',
-                  1500,
+                  1000,
                   'Hello my name is Ruben Carrazco\nWelcome to my Engineering Portfolio',
                   2000,
                 ]}
@@ -62,7 +62,7 @@ const Home = () => {
                 speed={50}
                 className="text-center whitespace-pre-line"
                 style={{
-                  fontSize: '2.25rem',
+                  fontSize: '1.875rem',
                   fontWeight: 'bold',
                   color: 'white',
                   fontFamily: 'SF Pro Display, system-ui, sans-serif',
