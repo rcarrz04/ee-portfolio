@@ -141,7 +141,7 @@ const AnimatedBackground = () => {
   return (
     <canvas
       ref={canvasRef}
-      className="absolute inset-0 w-full h-full bg-gradient-to-br from-primary to-primary-dark"
+      className="absolute inset-0 w-full h-full bg-black"
     />
   );
 };
