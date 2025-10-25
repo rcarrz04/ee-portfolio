@@ -78,7 +78,7 @@ const Home = () => {
                   speed={50}
                   className="banner-text"
                   style={{
-                    fontSize: '1.625rem', // 26px
+                    fontSize: '1.875rem', // 30px - same as top line
                     fontWeight: 'bold',
                     color: 'white',
                     fontFamily: 'SF Pro Display, system-ui, sans-serif',
