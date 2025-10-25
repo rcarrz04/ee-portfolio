@@ -41,26 +41,15 @@ const Home = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <div className="h-[45vh] relative">
-        <AnimatedBackground />
-        <div className="absolute inset-0 flex items-center justify-center z-20">
+      <div className="h-[45vh] relative bg-slate-900">
+        <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center space-y-2">
-            <TypeAnimation
-              sequence={[
-                'Hello my name is Ruben Carrazco',
-                2000,
-                '',
-                1000,
-                'Welcome to my Engineering Portfolio',
-                2000,
-              ]}
-              wrapper="h1"
-              speed={50}
-              deletionSpeed={50}
-              className="text-4xl font-bold text-white font-sfpro whitespace-pre-line"
-              repeat={0}
-              cursor={false}
-            />
+            <h1 className="text-4xl font-bold text-white font-sfpro">
+              Hello my name is Ruben Carrazco
+            </h1>
+            <h2 className="text-2xl text-white">
+              Welcome to my Engineering Portfolio
+            </h2>
           </div>
         </div>
       </div>
