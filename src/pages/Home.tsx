@@ -53,22 +53,18 @@ const Home = () => {
                   1500,
                   'Hello my name is Ruben Carrazco',
                   2000,
-                ]}
-                wrapper="h1"
-                speed={50}
-                className="text-4xl font-bold text-white font-sfpro"
-                repeat={0}
-                cursor={true}
-              />
-              <TypeAnimation
-                sequence={[
-                  5000,
-                  'Welcome to my Engineering Portfolio',
+                  'Hello my name is Ruben Carrazco\nWelcome to my Engineering Portfolio',
                   2000,
                 ]}
-                wrapper="h2"
+                wrapper="div"
                 speed={50}
-                className="text-2xl font-bold text-white font-sfpro"
+                className="text-center whitespace-pre-line"
+                style={{
+                  fontSize: '2.25rem',
+                  fontWeight: 'bold',
+                  color: 'white',
+                  fontFamily: 'SF Pro Display, system-ui, sans-serif'
+                }}
                 repeat={0}
                 cursor={true}
               />
