@@ -10,7 +10,7 @@ const sections = [
     title: "About",
     path: "/about",
     description: "Learn more about my background in Electrical Engineering and my passion for innovation.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+    image: "/headshot_Carrazco.JPEG",
   },
   {
     title: "Projects",
