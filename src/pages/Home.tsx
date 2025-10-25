@@ -54,7 +54,7 @@ const Home = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <div className="h-[22.5vh] relative bg-slate-900">
+      <div className="h-[33.75vh] relative bg-slate-900">
         <AnimatedBackground />
         <div className="absolute inset-0 flex items-center justify-center z-20">
           <div className="text-center space-y-2">
