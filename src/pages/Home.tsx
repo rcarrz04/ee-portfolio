@@ -43,7 +43,6 @@ const Home = () => {
   
   useEffect(() => {
     const timer = setTimeout(() => {
-      console.log('Setting showBottomLine to true');
       setShowBottomLine(true);
     }, 3500);
     return () => clearTimeout(timer);
@@ -78,8 +77,24 @@ const Home = () => {
                   cursor={false}
                 />
                 {showBottomLine && (
-                  <div
-                    className="banner-text banner-text-pop"
+                  <motion.div
+                    className="banner-text"
+                    initial={{ 
+                      opacity: 0, 
+                      scale: 0.5, 
+                      y: 20 
+                    }}
+                    animate={{ 
+                      opacity: 1, 
+                      scale: 1, 
+                      y: 0 
+                    }}
+                    transition={{
+                      type: "spring",
+                      stiffness: 300,
+                      damping: 20,
+                      duration: 0.6
+                    }}
                     style={{
                       fontSize: '1.25rem', // 20px - smaller than top line
                       fontWeight: 'normal',
@@ -88,11 +103,9 @@ const Home = () => {
                       lineHeight: '1.3',
                       marginTop: '0.5rem'
                     }}
-                    onAnimationStart={() => console.log('Animation started')}
-                    onAnimationEnd={() => console.log('Animation ended')}
                   >
                     Electrical Engineering student focusing on augmented reality and next-generation VLSI hardware at Stanford.
-                  </div>
+                  </motion.div>
                 )}
               </div>
             </div>
