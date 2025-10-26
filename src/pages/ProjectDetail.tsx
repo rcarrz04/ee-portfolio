@@ -96,15 +96,15 @@ const ProjectDetail = () => {
                 <div className="md:col-span-2">
                   <div className="space-y-6">
                     {project.id === "ac-dc-converter" ? (
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <AspectRatio ratio={16 / 9} className="bg-gray-100 rounded-lg overflow-hidden">
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <AspectRatio ratio={16 / 9} className="bg-gray-100 rounded-lg overflow-hidden md:col-span-1">
                           <img
                             src={project.image}
                             alt="AC-DC Converter"
                             className="w-full h-full object-cover"
                           />
                         </AspectRatio>
-                        <AspectRatio ratio={16 / 9} className="bg-gray-100 rounded-lg overflow-hidden">
+                        <AspectRatio ratio={16 / 9} className="bg-gray-100 rounded-lg overflow-hidden md:col-span-2">
                           <img
                             src="/ee-portfolio/acdccircuit.png"
                             alt="AC-DC Circuit Diagram"
