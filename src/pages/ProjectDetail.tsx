@@ -101,7 +101,7 @@ const ProjectDetail = () => {
                           <img
                             src={project.image}
                             alt="AC-DC Converter"
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-cover object-top"
                           />
                         </AspectRatio>
                         <AspectRatio ratio={4 / 1} className="bg-gray-100 rounded-lg overflow-hidden">
