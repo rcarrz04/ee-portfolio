@@ -12,12 +12,12 @@ const projects = [
     image: "/ee-portfolio/vr_glove.JPG",
     skills: ["Teensy-ESP32", "Unity", "ESP-NOW"],
   },
-  {
-    id: "ac-dc-converter",
-    title: "AC to DC Converter",
-    image: "/ee-portfolio/headshot_Carrazco.JPEG",
-    skills: ["Full-Bridge", "LTspice", "Oscilloscope"],
-  },
+    {
+      id: "ac-dc-converter",
+      title: "AC to DC Converter",
+      image: "/ee-portfolio/acdcconverter.JPG",
+      skills: ["Full-Bridge", "LTspice", "Oscilloscope"],
+    },
   {
     id: "music-synthesizer",
     title: "Enhanced Music Synthesizer",
