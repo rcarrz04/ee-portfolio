@@ -18,34 +18,34 @@ const projects: Record<string, Project> = {
     image: "./vr_glove_headset.jpg",
     overview: "A wireless microcontroller-based glove integrating flex sensors and an IMU for real-time gesture-based control in Unity.",
     skills: ["Teensy-ESP32", "Unity", "ESP-NOW", "Flex Sensors", "IMU", "Quaternion Tracking"],
-    description: "Built a wireless microcontroller-based glove integrating flex sensors and an IMU for real-time gesture-based control in Unity, achieving <50 ms latency and seamless head-tracked interaction. Programmed a Teensy–ESP32 system using ESP-NOW and quaternion-based tracking, reaching ~86% average gesture classification accuracy without reliance on cameras or external controllers. This project demonstrates advanced embedded systems design, wireless communication protocols, and real-time signal processing for VR applications.",
+    description: "Developed a cutting-edge wireless VR glove system that seamlessly integrates flex sensors and an IMU for real-time gesture recognition and control in Unity environments. The system achieves sub-50ms latency through optimized ESP-NOW wireless communication protocols and advanced quaternion-based tracking algorithms. Implemented on a Teensy-ESP32 platform, the glove delivers 86% average gesture classification accuracy without requiring external cameras or controllers, representing a significant advancement in immersive VR interaction technology. This project showcases expertise in embedded systems design, wireless communication protocols, real-time signal processing, and VR application development.",
     acknowledgements: "Stanford University | EE267, Virtual Reality"
   },
         "ac-dc-converter": {
           id: "ac-dc-converter",
           title: "AC to DC Converter",
           image: "/ee-portfolio/acdcconverter.JPG",
-          overview: "A full-bridge AC-DC converter with capacitive filtering to reduce ripple and regulate output voltage under various load conditions.",
+          overview: "A high-performance full-bridge AC-DC converter featuring advanced capacitive filtering and voltage regulation for optimal power delivery across diverse load conditions.",
           skills: ["Full-Bridge", "LTspice", "Oscilloscope", "Capacitive Filtering", "Ripple Reduction"],
-          description: "Implemented a full-bridge AC-DC converter with capacitive filtering to reduce ripple and regulate output voltage under various load conditions. Measured performance using oscilloscopes and waveform generators; validated and refined transient behavior through iterative LTspice simulations. This project showcases fundamental power electronics principles, circuit analysis techniques, and simulation-based design validation.",
+          description: "Engineered a sophisticated full-bridge AC-DC converter system incorporating advanced capacitive filtering techniques to achieve superior ripple reduction and precise voltage regulation across varying load conditions. Utilized professional-grade oscilloscopes and waveform generators for comprehensive performance characterization, while leveraging iterative LTspice simulations to optimize transient behavior and validate design parameters. This project demonstrates mastery of fundamental power electronics principles, advanced circuit analysis methodologies, and rigorous simulation-based design validation techniques essential for modern power conversion systems.",
           acknowledgements: "Stanford University | EE101A, Circuits I"
         },
   "music-synthesizer": {
     id: "music-synthesizer",
     title: "Enhanced Music Synthesizer & Display",
     image: "/ee-portfolio/music snythesizer.jpg",
-    overview: "A Verilog-based music synthesizer for FPGA capable of waveform mixing, harmonic generation, and amplitude control displayed via VGA output.",
+    overview: "An advanced Verilog-based music synthesizer implemented on FPGA with sophisticated waveform mixing, harmonic generation, and real-time VGA visualization capabilities.",
     skills: ["Verilog", "FPGA", "VGA", "Waveform Mixing", "Harmonic Generation", "Xilinx Vivado"],
-    description: "Created a Verilog-based music synthesizer for FPGA capable of waveform mixing, harmonic generation, and amplitude control displayed via VGA output. Debugged timing and control logic using Xilinx Vivado for glitch-free output on VGA hardware. This project demonstrates digital design principles, FPGA programming, and real-time audio processing using hardware description languages.",
+    description: "Architected and implemented a comprehensive music synthesizer system using Verilog HDL on FPGA hardware, featuring advanced waveform mixing algorithms, harmonic generation capabilities, and real-time amplitude control with VGA display output. Conducted extensive debugging and optimization of timing-critical control logic using Xilinx Vivado development environment to ensure glitch-free audio output and stable VGA rendering. This project exemplifies expertise in digital design principles, FPGA programming methodologies, real-time audio processing, and hardware description language development for complex multimedia applications.",
     acknowledgements: "Stanford University | EE108, Digital Design"
   },
   "simd-gemm-accelerator": {
     id: "simd-gemm-accelerator",
     title: "SIMD GEMM Accelerator",
-    image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176",
-    overview: "A SIMD GEMM accelerator implementation using EDA tools with performance optimization through high-level synthesis.",
+    image: "./coming-soon-poster.svg",
+    overview: "An advanced SIMD GEMM accelerator implementation utilizing cutting-edge EDA tools and high-level synthesis for optimal performance in matrix operations.",
     skills: ["SystemVerilog", "C/C++", "VLSI", "SIMD", "GEMM", "High-Level Synthesis", "EDA Tools"],
-    description: "Writing C/C++ and SystemVerilog code to implement and synthesize a SIMD GEMM accelerator using EDA tools, with performance optimization through high-level synthesis. This ongoing project explores advanced VLSI design methodologies, parallel computing architectures, and optimization techniques for matrix operations in hardware. The accelerator is designed to significantly improve computational performance for machine learning and scientific computing applications.",
+    description: "Currently developing a state-of-the-art SIMD GEMM accelerator through comprehensive C/C++ and SystemVerilog implementation, leveraging advanced EDA tools and high-level synthesis techniques for maximum computational performance. This ambitious project explores cutting-edge VLSI design methodologies, parallel computing architectures, and optimization strategies for matrix operations in hardware acceleration. The accelerator is designed to deliver significant performance improvements for machine learning and scientific computing applications, representing the forefront of hardware acceleration technology.",
     acknowledgements: "Stanford University | EE271, Introduction to VLSI Systems"
   }
 };

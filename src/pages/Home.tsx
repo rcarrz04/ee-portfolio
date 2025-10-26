@@ -27,7 +27,7 @@ const projects = [
   {
     id: "simd-gemm-accelerator",
     title: "SIMD GEMM Accelerator",
-    image: "/ee-portfolio/headshot_Carrazco.JPEG",
+    image: "/ee-portfolio/coming-soon-poster.svg",
     skills: ["SystemVerilog", "C/C++", "VLSI"],
   },
 ];
