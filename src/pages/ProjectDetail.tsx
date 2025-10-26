@@ -108,7 +108,7 @@ const ProjectDetail = () => {
                           <img
                             src="/ee-portfolio/acdccircuit.png"
                             alt="AC-DC Circuit Diagram"
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-contain"
                           />
                         </AspectRatio>
                       </div>
