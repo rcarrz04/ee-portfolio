@@ -97,7 +97,7 @@ const ProjectDetail = () => {
                   <div className="space-y-6">
                     {project.id === "ac-dc-converter" ? (
                       <div className="space-y-4">
-                        <AspectRatio ratio={3 / 1} className="bg-gray-100 rounded-lg overflow-hidden">
+                        <AspectRatio ratio={2 / 1} className="bg-gray-100 rounded-lg overflow-hidden">
                           <img
                             src={project.image}
                             alt="AC-DC Converter"
