@@ -139,6 +139,21 @@ const ProjectDetail = () => {
                   </div>
                 </div>
               )}
+
+              {/* PDF Viewer for Music Synthesizer Project */}
+              {project.id === "music-synthesizer" && (
+                <div className="mt-8">
+                  <h3 className="text-xl font-semibold mb-4 text-gray-900">Project Report</h3>
+                  <div className="w-full h-[100vh] border border-gray-200 rounded-lg overflow-hidden">
+                    <iframe
+                      src="./ee108finalreport.pdf#toolbar=1&navpanes=1&scrollbar=1"
+                      className="w-full h-full"
+                      title="Music Synthesizer Report"
+                      style={{ minHeight: '800px' }}
+                    />
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>
