@@ -21,15 +21,15 @@ const projects: Record<string, Project> = {
     description: "Built a wireless microcontroller-based glove integrating flex sensors and an IMU for real-time gesture-based control in Unity, achieving <50 ms latency and seamless head-tracked interaction. Programmed a Teensy–ESP32 system using ESP-NOW and quaternion-based tracking, reaching ~86% average gesture classification accuracy without reliance on cameras or external controllers. This project demonstrates advanced embedded systems design, wireless communication protocols, and real-time signal processing for VR applications.",
     acknowledgements: "Stanford University | EE267, Virtual Reality"
   },
-  "ac-dc-converter": {
-    id: "ac-dc-converter",
-    title: "AC to DC Converter",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64",
-    overview: "A full-bridge AC-DC converter with capacitive filtering to reduce ripple and regulate output voltage under various load conditions.",
-    skills: ["Full-Bridge", "LTspice", "Oscilloscope", "Capacitive Filtering", "Ripple Reduction"],
-    description: "Implemented a full-bridge AC-DC converter with capacitive filtering to reduce ripple and regulate output voltage under various load conditions. Measured performance using oscilloscopes and waveform generators; validated and refined transient behavior through iterative LTspice simulations. This project showcases fundamental power electronics principles, circuit analysis techniques, and simulation-based design validation.",
-    acknowledgements: "Stanford University | EE101A, Circuits I"
-  },
+        "ac-dc-converter": {
+          id: "ac-dc-converter",
+          title: "AC to DC Converter",
+          image: "/ee-portfolio/acdcconverter.JPG",
+          overview: "A full-bridge AC-DC converter with capacitive filtering to reduce ripple and regulate output voltage under various load conditions.",
+          skills: ["Full-Bridge", "LTspice", "Oscilloscope", "Capacitive Filtering", "Ripple Reduction"],
+          description: "Implemented a full-bridge AC-DC converter with capacitive filtering to reduce ripple and regulate output voltage under various load conditions. Measured performance using oscilloscopes and waveform generators; validated and refined transient behavior through iterative LTspice simulations. This project showcases fundamental power electronics principles, circuit analysis techniques, and simulation-based design validation.",
+          acknowledgements: "Stanford University | EE101A, Circuits I"
+        },
   "music-synthesizer": {
     id: "music-synthesizer",
     title: "Enhanced Music Synthesizer & Display",
@@ -93,15 +93,34 @@ const ProjectDetail = () => {
             </div>
           </div>
 
-          <div className="md:col-span-2">
-            <div className="space-y-6">
-              <AspectRatio ratio={16 / 9} className="bg-gray-100 rounded-lg overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover"
-                />
-              </AspectRatio>
+                <div className="md:col-span-2">
+                  <div className="space-y-6">
+                    {project.id === "ac-dc-converter" ? (
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <AspectRatio ratio={16 / 9} className="bg-gray-100 rounded-lg overflow-hidden">
+                          <img
+                            src={project.image}
+                            alt="AC-DC Converter"
+                            className="w-full h-full object-cover"
+                          />
+                        </AspectRatio>
+                        <AspectRatio ratio={16 / 9} className="bg-gray-100 rounded-lg overflow-hidden">
+                          <img
+                            src="/ee-portfolio/acdccircuit.png"
+                            alt="AC-DC Circuit Diagram"
+                            className="w-full h-full object-cover"
+                          />
+                        </AspectRatio>
+                      </div>
+                    ) : (
+                      <AspectRatio ratio={16 / 9} className="bg-gray-100 rounded-lg overflow-hidden">
+                        <img
+                          src={project.image}
+                          alt={project.title}
+                          className="w-full h-full object-cover"
+                        />
+                      </AspectRatio>
+                    )}
               <div className="prose max-w-none">
                 <p className="text-gray-600">{project.description}</p>
               </div>
