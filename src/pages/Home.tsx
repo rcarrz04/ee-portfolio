@@ -21,7 +21,7 @@ const projects = [
   {
     id: "music-synthesizer",
     title: "Enhanced Music Synthesizer",
-    image: "/ee-portfolio/headshot_Carrazco.JPEG",
+    image: "/ee-portfolio/music snythesizer.jpg",
     skills: ["Verilog", "FPGA", "VGA"],
   },
   {

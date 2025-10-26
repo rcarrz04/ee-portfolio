@@ -33,7 +33,7 @@ const projects: Record<string, Project> = {
   "music-synthesizer": {
     id: "music-synthesizer",
     title: "Enhanced Music Synthesizer & Display",
-    image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f",
+    image: "/ee-portfolio/music snythesizer.jpg",
     overview: "A Verilog-based music synthesizer for FPGA capable of waveform mixing, harmonic generation, and amplitude control displayed via VGA output.",
     skills: ["Verilog", "FPGA", "VGA", "Waveform Mixing", "Harmonic Generation", "Xilinx Vivado"],
     description: "Created a Verilog-based music synthesizer for FPGA capable of waveform mixing, harmonic generation, and amplitude control displayed via VGA output. Debugged timing and control logic using Xilinx Vivado for glitch-free output on VGA hardware. This project demonstrates digital design principles, FPGA programming, and real-time audio processing using hardware description languages.",
