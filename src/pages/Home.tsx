@@ -124,7 +124,7 @@ const Home = () => {
                 )}
               </div>
               <div className="flex justify-center mt-6">
-                <div className="w-40 h-40 rounded-full overflow-hidden border-2 border-white/20 shrink-0">
+                <div className="w-36 h-36 rounded-full overflow-hidden border-2 border-white/20 shrink-0 flex-shrink-0">
                   <img
                     src="/ee-portfolio/headshot_Carrazco.JPEG"
                     alt="Ruben Carrazco"
