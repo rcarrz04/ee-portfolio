@@ -123,8 +123,8 @@ const Home = () => {
                   </motion.div>
                 )}
               </div>
-              <div className="flex justify-center mt-6">
-                <div className="w-48 h-48 rounded-full overflow-hidden border-2 border-white/20">
+              <div className="flex justify-center mt-4">
+                <div className="w-40 h-40 rounded-full overflow-hidden border-2 border-white/20">
                   <img
                     src="/ee-portfolio/headshot_Carrazco.JPEG"
                     alt="Ruben Carrazco"
