@@ -11,19 +11,19 @@ const projects = [
   {
     id: "ac-dc-converter",
     title: "AC to DC Converter",
-    image: "/ee-portfolio/headshot_Carrazco.JPEG",
+    image: "/ee-portfolio/acdcconverter.JPG",
     skills: ["Full-Bridge", "LTspice", "Oscilloscope"],
   },
   {
     id: "music-synthesizer",
     title: "Enhanced Music Synthesizer",
-    image: "/ee-portfolio/headshot_Carrazco.JPEG",
+    image: "/ee-portfolio/music snythesizer.jpg",
     skills: ["Verilog", "FPGA", "VGA"],
   },
   {
     id: "simd-gemm-accelerator",
     title: "SIMD GEMM Accelerator",
-    image: "/ee-portfolio/headshot_Carrazco.JPEG",
+    image: "/ee-portfolio/coming-soon-poster.svg",
     skills: ["SystemVerilog", "C/C++", "VLSI"],
   },
 ];
