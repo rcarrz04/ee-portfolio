@@ -45,7 +45,7 @@ const projects: Record<string, Project> = {
     image: "./coming-soon-poster.svg",
     overview: "An advanced SIMD GEMM accelerator implementation utilizing cutting-edge EDA tools and high-level synthesis for optimal performance in matrix operations.",
     skills: ["SystemVerilog", "C/C++", "VLSI", "SIMD", "GEMM", "High-Level Synthesis", "EDA Tools"],
-    description: "Currently developing a state-of-the-art SIMD GEMM accelerator through comprehensive C/C++ and SystemVerilog implementation, leveraging advanced EDA tools and high-level synthesis techniques for maximum computational performance. This ambitious project explores cutting-edge VLSI design methodologies, parallel computing architectures, and optimization strategies for matrix operations in hardware acceleration. The accelerator is designed to deliver significant performance improvements for machine learning and scientific computing applications, representing the forefront of hardware acceleration technology.",
+    description: "This project is currently in development and focuses on building a SIMD GEMM accelerator for matrix operations. The work begins with writing C/C++ code to express high-level system behavior, followed by implementing the accelerator in SystemVerilog and synthesizing it using EDA tools. The design is then optimized to improve performance. A later stage involves porting the design to high-level synthesis and comparing results. This project introduces practical experience with hardware design, optimization, and accelerator implementation for matrix computation.",
     acknowledgements: "Stanford University | EE271, Introduction to VLSI Systems"
   }
 };

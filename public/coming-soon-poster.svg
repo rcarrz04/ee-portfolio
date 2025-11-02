@@ -52,7 +52,7 @@
   <text x="200" y="210" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="white" opacity="0.9">SIMD GEMM Accelerator</text>
   
   <!-- Description -->
-  <text x="200" y="240" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white" opacity="0.8">Advanced VLSI Design Project</text>
+  <text x="200" y="240" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white" opacity="0.8">VLSI Design Project</text>
   
   <!-- Stanford logo placeholder -->
   <circle cx="200" cy="260" r="15" fill="white" opacity="0.3"/>
