@@ -1,4 +1,4 @@
-import { Mail, Phone, Linkedin, Github } from "lucide-react";
+import { Mail, Linkedin, Github } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -12,12 +12,6 @@ const Contact = () => {
                 <Mail className="w-6 h-6 text-gray-600" />
                 <a href="mailto:ruben04@stanford.edu" className="text-lg text-gray-600 hover:text-gray-900">
                   ruben04@stanford.edu
-                </a>
-              </div>
-              <div className="flex items-center space-x-4">
-                <Phone className="w-6 h-6 text-gray-600" />
-                <a href="tel:+13232303022" className="text-lg text-gray-600 hover:text-gray-900">
-                  +1 (323) 230-3022
                 </a>
               </div>
               <div className="flex items-center space-x-4">
