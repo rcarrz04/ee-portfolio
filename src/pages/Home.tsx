@@ -123,15 +123,35 @@ const Home = () => {
                   </motion.div>
                 )}
               </div>
-              <div className="flex justify-center mt-6">
-                <div className="w-36 h-36 rounded-full overflow-hidden border-2 border-white/20 shrink-0 flex-shrink-0">
-                  <img
-                    src="/ee-portfolio/headshot_Carrazco.JPEG"
-                    alt="Ruben Carrazco"
-                    className="w-full h-full object-cover object-[center_30%]"
-                  />
-                </div>
-              </div>
+              {showBottomLine && (
+                <motion.div
+                  className="flex justify-center mt-6"
+                  initial={{ 
+                    opacity: 0, 
+                    scale: 0.5, 
+                    y: 20 
+                  }}
+                  animate={{ 
+                    opacity: 1, 
+                    scale: 1, 
+                    y: 0 
+                  }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 300,
+                    damping: 20,
+                    duration: 0.6
+                  }}
+                >
+                  <div className="w-36 h-36 rounded-full overflow-hidden border-2 border-white/20 shrink-0 flex-shrink-0">
+                    <img
+                      src="/ee-portfolio/headshot_Carrazco.JPEG"
+                      alt="Ruben Carrazco"
+                      className="w-full h-full object-cover object-[center_30%]"
+                    />
+                  </div>
+                </motion.div>
+              )}
             </div>
           </div>
         </div>
