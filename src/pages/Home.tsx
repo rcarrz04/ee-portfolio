@@ -56,8 +56,8 @@ const Home = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <div className="h-[45vh] relative bg-slate-900 pt-16">
-        <div className="absolute inset-0 flex items-center justify-center z-20">
+      <div className="h-[60vh] relative bg-slate-900 pt-16">
+        <div className="absolute inset-0 flex justify-center z-20 pt-8">
           <div className="text-center space-y-2">
             <div className="space-y-4">
               <div className="text-center space-y-2">
