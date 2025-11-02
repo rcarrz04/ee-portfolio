@@ -18,7 +18,7 @@ const projects: Record<string, Project> = {
     image: "./vr_glove_headset.jpg",
     overview: "A wireless microcontroller-based glove integrating flex sensors and an IMU for real-time gesture-based control in Unity.",
     skills: ["Teensy-ESP32", "Unity", "ESP-NOW", "Flex Sensors", "IMU", "Quaternion Tracking"],
-    description: "Developed a cutting-edge wireless VR glove system that seamlessly integrates flex sensors and an IMU for real-time gesture recognition and control in Unity environments. The system achieves sub-50ms latency through optimized ESP-NOW wireless communication protocols and advanced quaternion-based tracking algorithms. Implemented on a Teensy-ESP32 platform, the glove delivers 86% average gesture classification accuracy without requiring external cameras or controllers, representing a significant advancement in immersive VR interaction technology. This project showcases expertise in embedded systems design, wireless communication protocols, real-time signal processing, and VR application development.",
+    description: "This project presents a wireless VR glove controller that integrates five flex sensors and an IMU to enable real-time gesture recognition and interaction in Unity. Sensor data is transmitted using ESP NOW between ESP32 modules, while a Teensy performs calibration and quaternion-based orientation tracking to classify hand gestures accurately and with low latency. The system supports natural interaction in VR without external cameras or traditional handheld controllers, demonstrating strong integration of embedded sensing, wireless communication, signal processing, and VR software development.",
     acknowledgements: "Stanford University | EE267, Virtual Reality"
   },
         "ac-dc-converter": {
