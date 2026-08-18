@@ -1,48 +1,41 @@
 import { Mail, Linkedin, Github } from "lucide-react";
+import { profile } from "@/data/profile";
+
+const contactLinks = [
+  { icon: Mail, label: profile.email, href: `mailto:${profile.email}` },
+  { icon: Linkedin, label: "LinkedIn Profile", href: profile.linkedin },
+  { icon: Github, label: "GitHub Profile", href: profile.github },
+];
 
 const Contact = () => {
   return (
-    <div className="min-h-screen pt-16 pb-12 font-sfpro">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mt-12">
-          <h1 className="text-4xl font-medium mb-8">Contact Me</h1>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div className="space-y-6">
-              <div className="flex items-center space-x-4">
-                <Mail className="w-6 h-6 text-gray-600" />
-                <a href="mailto:ruben04@stanford.edu" className="text-lg text-gray-600 hover:text-gray-900">
-                  ruben04@stanford.edu
-                </a>
-              </div>
-              <div className="flex items-center space-x-4">
-                <Linkedin className="w-6 h-6 text-gray-600" />
-                <a 
-                  href="https://www.linkedin.com/in/ruben-carrazco-368b6a263/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-lg text-gray-600 hover:text-gray-900"
-                >
-                  LinkedIn Profile
-                </a>
-              </div>
-              <div className="flex items-center space-x-4">
-                <Github className="w-6 h-6 text-gray-600" />
-                <a 
-                  href="https://github.com/rcarrz04" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-lg text-gray-600 hover:text-gray-900"
-                >
-                  GitHub Profile
-                </a>
-              </div>
-            </div>
-            <div className="md:col-span-2 rounded-lg overflow-hidden -mt-8">
-              <img
-                src="/ee-portfolio/skydiving.jpg"
-                alt="Skydiving"
-                className="w-full h-[400px] object-cover"
-              />
+    <div className="min-h-screen bg-paper pt-32 pb-20">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p className="font-mono text-xs uppercase tracking-widest text-signal mb-3">§ Contact</p>
+        <h1 className="font-display text-3xl sm:text-4xl font-medium text-ink mb-12">Get in touch</h1>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div className="space-y-5">
+            {contactLinks.map(({ icon: Icon, label, href }) => (
+              <a
+                key={label}
+                href={href}
+                target={href.startsWith("http") ? "_blank" : undefined}
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-graphite hover:text-signal transition-colors group"
+              >
+                <Icon className="w-5 h-5 shrink-0" />
+                <span className="border-b border-transparent group-hover:border-signal">{label}</span>
+              </a>
+            ))}
+          </div>
+
+          <div className="md:col-span-2">
+            <div className="w-48 border border-line rounded-lg overflow-hidden -rotate-2 shadow-sm">
+              <img src="/ee-portfolio/skydiving.jpg" alt="Skydiving" className="w-full h-56 object-cover" />
+              <p className="font-mono text-[10px] text-graphite px-2 py-1.5 border-t border-line">
+                off the clock
+              </p>
             </div>
           </div>
         </div>
@@ -52,4 +45,3 @@ const Contact = () => {
 };
 
 export default Contact;
-

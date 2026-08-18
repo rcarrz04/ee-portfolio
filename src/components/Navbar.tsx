@@ -1,111 +1,69 @@
-
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { cn } from "@/lib/utils";
+
+const links = [
+  { to: "/", label: "Home" },
+  { to: "/about", label: "About" },
+  { to: "/projects", label: "Projects" },
+  { to: "/resume", label: "Résumé" },
+  { to: "/contact", label: "Contact" },
+];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { pathname } = useLocation();
+  const closeMenu = () => setIsOpen(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const closeMenu = () => {
-    setIsOpen(false);
-  };
+  const linkClass = (to: string) =>
+    cn(
+      "font-mono text-xs uppercase tracking-wide transition-colors border-b border-transparent pb-0.5",
+      pathname === to
+        ? "text-signal border-signal"
+        : "text-graphite hover:text-ink hover:border-line"
+    );
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="fixed top-0 left-0 right-0 bg-paper/90 backdrop-blur-sm z-50 border-b border-line">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
-          <Link to="/" className="text-xl font-sfpro font-bold">
+          <Link to="/" className="font-display text-lg font-semibold text-ink">
             Ruben Carrazco
           </Link>
-          
-          {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-4">
-            <Link 
-              to="/" 
-              className="font-sfpro text-gray-900 hover:text-gray-600 transition-colors bg-gray-100 px-4 py-2 rounded-lg"
-            >
-              Home
-            </Link>
-            <Link 
-              to="/about" 
-              className="font-sfpro text-gray-900 hover:text-gray-600 transition-colors bg-gray-100 px-4 py-2 rounded-lg"
-            >
-              About
-            </Link>
-            <Link 
-              to="/projects" 
-              className="font-sfpro text-gray-900 hover:text-gray-600 transition-colors bg-gray-100 px-4 py-2 rounded-lg"
-            >
-              Projects
-            </Link>
-            <Link 
-              to="/resume" 
-              className="font-sfpro text-gray-900 hover:text-gray-600 transition-colors bg-gray-100 px-4 py-2 rounded-lg"
-            >
-              Resume
-            </Link>
-            <Link 
-              to="/contact" 
-              className="font-sfpro text-gray-900 hover:text-gray-600 transition-colors bg-gray-100 px-4 py-2 rounded-lg"
-            >
-              Contact
-            </Link>
+
+          <div className="hidden md:flex items-center space-x-8">
+            {links.map((link) => (
+              <Link key={link.to} to={link.to} className={linkClass(link.to)}>
+                {link.label}
+              </Link>
+            ))}
           </div>
 
-          {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button
-              onClick={toggleMenu}
-              className="text-gray-900 hover:text-gray-600 transition-colors p-2"
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-ink hover:text-graphite transition-colors p-2"
+              aria-label="Toggle menu"
             >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
+              {isOpen ? <X size={22} /> : <Menu size={22} />}
             </button>
           </div>
         </div>
 
-        {/* Mobile Dropdown Menu */}
         {isOpen && (
-          <div className="md:hidden absolute top-16 left-0 right-0 bg-white border-b border-gray-100 shadow-lg">
-            <div className="px-4 py-2 space-y-2">
-              <Link 
-                to="/" 
-                onClick={closeMenu}
-                className="block font-sfpro text-gray-900 hover:text-gray-600 transition-colors bg-white px-4 py-3 rounded-lg"
-              >
-                Home
-              </Link>
-              <Link 
-                to="/about" 
-                onClick={closeMenu}
-                className="block font-sfpro text-gray-900 hover:text-gray-600 transition-colors bg-white px-4 py-3 rounded-lg"
-              >
-                About
-              </Link>
-              <Link 
-                to="/projects" 
-                onClick={closeMenu}
-                className="block font-sfpro text-gray-900 hover:text-gray-600 transition-colors bg-white px-4 py-3 rounded-lg"
-              >
-                Projects
-              </Link>
-              <Link 
-                to="/resume" 
-                onClick={closeMenu}
-                className="block font-sfpro text-gray-900 hover:text-gray-600 transition-colors bg-white px-4 py-3 rounded-lg"
-              >
-                Resume
-              </Link>
-              <Link 
-                to="/contact" 
-                onClick={closeMenu}
-                className="block font-sfpro text-gray-900 hover:text-gray-600 transition-colors bg-white px-4 py-3 rounded-lg"
-              >
-                Contact
-              </Link>
+          <div className="md:hidden absolute top-16 left-0 right-0 bg-paper border-b border-line">
+            <div className="px-4 py-3 space-y-1">
+              {links.map((link) => (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  onClick={closeMenu}
+                  className="block font-mono text-xs uppercase tracking-wide text-graphite hover:text-ink py-3"
+                >
+                  {link.label}
+                </Link>
+              ))}
             </div>
           </div>
         )}
