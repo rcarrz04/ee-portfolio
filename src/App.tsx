@@ -17,7 +17,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
         <Router>
-          <div className="min-h-screen bg-white">
+          <div className="min-h-screen bg-paper">
             <Navbar />
             <Routes>
               <Route path="/" element={<Home />} />
