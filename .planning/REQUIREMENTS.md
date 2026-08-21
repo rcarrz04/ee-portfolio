@@ -10,8 +10,8 @@ Requirements for this milestone. Each maps to roadmap phases.
 ### Design Tokens (foundation)
 
 - [ ] **TOKEN-01**: All color values route through the existing shadcn semantic CSS variables (`background`, `foreground`, `card`, `primary`, `accent`, `border`, etc.) — no direction-specific hardcoded hex utility classes (fixes pass 1's `paper`/`ink`/`graphite`/`line`/`signal` bypass)
-- [ ] **TOKEN-02**: The dark direction is authored with its own independently-chosen values (not derived by inverting the light direction's lightness)
-- [ ] **TOKEN-03**: Type system keeps a consistent display/body/mono role structure in components — only the font-family values assigned to those roles change per direction
+- [x] **TOKEN-02**: The dark direction is authored with its own independently-chosen values (not derived by inverting the light direction's lightness)
+- [x] **TOKEN-03**: Type system keeps a consistent display/body/mono role structure in components — only the font-family values assigned to those roles change per direction
 - [ ] **TOKEN-04**: A dev-only mechanism exists to switch between candidate directions on the running site, without shipping that switcher to production
 
 ### Direction Exploration
@@ -53,8 +53,8 @@ Explicitly excluded. Documented to prevent scope creep.
 | Requirement | Phase | Status |
 |-------------|-------|--------|
 | TOKEN-01 | Phase 1 | Pending |
-| TOKEN-02 | Phase 1 | Pending |
-| TOKEN-03 | Phase 1 | Pending |
+| TOKEN-02 | Phase 1 | Complete |
+| TOKEN-03 | Phase 1 | Complete |
 | TOKEN-04 | Phase 1 | Pending |
 | DIR-01 | Phase 2 | Pending |
 | DIR-02 | Phase 2 | Pending |

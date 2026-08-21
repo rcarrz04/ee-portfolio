@@ -30,7 +30,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 3 plans in 2 waves
 
 Plans:
-- [ ] 01-01-PLAN.md — Bind font roles to CSS variables + author the dark value set, gated by a contrast script (TOKEN-02, TOKEN-03) [wave 1]
+- [x] 01-01-PLAN.md — Bind font roles to CSS variables + author the dark value set, gated by a contrast script (TOKEN-02, TOKEN-03) [wave 1]
 - [ ] 01-02-PLAN.md — Dev-only direction switcher: DIRECTIONS registry, floating panel, DEV-gated mount proven absent from production (TOKEN-04) [wave 1]
 - [ ] 01-03-PLAN.md — Sweep all 107 pass-1 palette classes to semantic tokens across 9 files and delete the five hardcoded color keys (TOKEN-01) [wave 2, depends on 01-01 + 01-02]
 
@@ -66,7 +66,7 @@ Phases execute in numeric order: 1 → 2 → 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Design Tokens Foundation | 0/TBD | Not started | - |
+| 1. Design Tokens Foundation | 1/3 | In Progress|  |
 | 2. Direction Exploration | 0/TBD | Not started | - |
 | 3. Full Implementation | 0/TBD | Not started | - |
 </content>
