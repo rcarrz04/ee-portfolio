@@ -3,6 +3,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
 import Navbar from "@/components/Navbar";
+import DirectionSwitcher from "@/components/DirectionSwitcher";
 import Home from "@/pages/Home";
 import About from "@/pages/About";
 import Projects from "@/pages/Projects";
@@ -28,6 +29,7 @@ function App() {
               <Route path="/contact" element={<Contact />} />
             </Routes>
             <Toaster />
+            {import.meta.env.DEV && <DirectionSwitcher />}
           </div>
         </Router>
       </ThemeProvider>
