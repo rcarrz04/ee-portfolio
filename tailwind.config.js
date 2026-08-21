@@ -18,9 +18,9 @@ export default {
     extend: {
       fontFamily: {
         sfpro: ["-apple-system", "BlinkMacSystemFont", "San Francisco", "Helvetica Neue", "sans-serif"],
-        display: ["'Space Grotesk'", "-apple-system", "sans-serif"],
-        body: ["'IBM Plex Sans'", "-apple-system", "sans-serif"],
-        mono: ["'IBM Plex Mono'", "ui-monospace", "monospace"],
+        display: ["var(--font-display)"],
+        body: ["var(--font-body)"],
+        mono: ["var(--font-mono)"],
       },
       colors: {
         paper: "#F5F5F1",
