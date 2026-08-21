@@ -27,7 +27,13 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. The `.dark` block in `index.css` contains its own independently-chosen HSL values (not a mechanical lightness-inversion of `:root`), and toggling dark mode on any page visibly produces a coherent, intentional dark palette
   3. Components consistently reference `font-display`/`font-body`/`font-mono` role classes bound to CSS variables — no direct font-family literals in JSX — so changing a role's assigned font-family updates every usage of that role at once
   4. A dev-only direction switcher (e.g. `data-direction` attribute toggled via a hidden route or keyboard shortcut) changes color/font values live on the running dev server, and is verifiably absent from the `npm run build` production output
-**Plans**: TBD
+**Plans**: 3 plans in 2 waves
+
+Plans:
+- [ ] 01-01-PLAN.md — Bind font roles to CSS variables + author the dark value set, gated by a contrast script (TOKEN-02, TOKEN-03) [wave 1]
+- [ ] 01-02-PLAN.md — Dev-only direction switcher: DIRECTIONS registry, floating panel, DEV-gated mount proven absent from production (TOKEN-04) [wave 1]
+- [ ] 01-03-PLAN.md — Sweep all 107 pass-1 palette classes to semantic tokens across 9 files and delete the five hardcoded color keys (TOKEN-01) [wave 2, depends on 01-01 + 01-02]
+
 **UI hint**: yes
 
 ### Phase 2: Direction Exploration
