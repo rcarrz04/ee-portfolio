@@ -141,3 +141,11 @@ None - no external service configuration required.
 ---
 *Phase: 01-design-tokens-foundation*
 *Completed: 2026-08-21*
+
+## Self-Check: PASSED
+- FOUND: scripts/check-contrast.cjs
+- FOUND: .planning/phases/01-design-tokens-foundation/01-01-SUMMARY.md
+- FOUND commit: 968729b9 (Task 1)
+- FOUND commit: 64aaa19c (Task 2)
+- FOUND commit: 90562e37 (Task 3)
+- FOUND commit: 5e2dbd73 (SUMMARY commit)
