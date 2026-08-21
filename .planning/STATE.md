@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 01-01-PLAN.md (TOKEN-02, TOKEN-03)
-last_updated: "2026-08-21T00:28:25.291Z"
+stopped_at: Completed 01-02-PLAN.md (TOKEN-04)
+last_updated: "2026-08-21T00:32:41.156Z"
 last_activity: 2026-08-21
 progress:
   total_phases: 3
   completed_phases: 0
   total_plans: 3
-  completed_plans: 1
+  completed_plans: 2
   percent: 0
 ---
 
@@ -26,11 +26,11 @@ See: .planning/PROJECT.md (updated 2026-08-18)
 ## Current Position
 
 Phase: 01 (design-tokens-foundation) — EXECUTING
-Plan: 2 of 3
+Plan: 3 of 3
 Status: Ready to execute
 Last activity: 2026-08-21
 
-Progress: [███░░░░░░░] 33%
+Progress: [███████░░░] 67%
 
 ## Performance Metrics
 
@@ -53,6 +53,7 @@ Progress: [███░░░░░░░] 33%
 
 *Updated after each plan completion*
 | Phase 01 P01 | 10min | 3 tasks | 3 files |
+| Phase 01 P02 | 10min | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -66,6 +67,8 @@ Recent decisions affecting current work:
 - Milestone start: No urgency — optimize for getting the direction right over shipping fast
 - [Phase 01]: Dark palette values used verbatim from UI-SPEC target table — all 10 WCAG AA pairs and 4 structural rules passed on first run, no lightness tuning needed
 - [Phase 01]: Known light-mode accent-foreground/accent gap (4.12:1) recorded as KNOWN exception with 4.10:1 regression floor, handed to Phase 3 / IMPL-03 rather than fixed in Phase 1
+- [Phase 01 P02]: Used sessionStorage (not localStorage) for direction choice to avoid colliding with ThemeProvider's localStorage vite-ui-theme key
+- [Phase 01 P02]: A/B build proof (positive control + production build) confirms TOKEN-04's dev-only switcher is fully dead-code-eliminated in production; no React.lazy contingency needed
 
 ### Pending Todos
 
@@ -88,7 +91,7 @@ Items acknowledged and carried forward from previous milestone close:
 
 ## Session Continuity
 
-Last session: 2026-08-21T00:28:13.682Z
-Stopped at: Completed 01-01-PLAN.md (TOKEN-02, TOKEN-03)
+Last session: 2026-08-21T00:32:41.151Z
+Stopped at: Completed 01-02-PLAN.md (TOKEN-04)
 Resume file: None
 </content>
