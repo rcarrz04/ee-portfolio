@@ -16,7 +16,18 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sfpro: ["-apple-system", "BlinkMacSystemFont", "San Francisco", "Helvetica Neue", "sans-serif"],
+        display: ["var(--font-display)"],
+        body: ["var(--font-body)"],
+        mono: ["var(--font-mono)"],
+      },
       colors: {
+        paper: "#F5F5F1",
+        ink: "#14161A",
+        graphite: "#5B5F66",
+        line: "#D8DBDD",
+        signal: "#D1490C",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

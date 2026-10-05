@@ -1,43 +1,39 @@
 import { Download, ExternalLink } from "lucide-react";
 import { asset } from "@/data/projects";
 
-const RESUME_URL = asset("Resume_Ruben_Carrazco.pdf");
+const RESUME_PDF = asset("Resume_Ruben_Carrazco.pdf");
 
 const Resume = () => {
   return (
-    <div className="min-h-screen pt-16 pb-12 font-sfpro">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mt-12">
-          <div className="flex flex-wrap gap-3 justify-between items-center mb-6">
-            <h1 className="text-4xl font-medium">Resume</h1>
-            <div className="flex gap-3">
-              <a
-                href={RESUME_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center space-x-2 px-4 py-2 border border-gray-300 text-gray-900 rounded-lg hover:bg-gray-100 transition-colors"
-              >
-                <ExternalLink size={20} />
-                <span>Open in new tab</span>
-              </a>
-              <a
-                href={RESUME_URL}
-                download
-                className="flex items-center space-x-2 px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors"
-              >
-                <Download size={20} />
-                <span>Download PDF</span>
-              </a>
-            </div>
+    <div className="min-h-screen bg-paper pt-32 pb-20">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between flex-wrap gap-4 mb-8">
+          <div>
+            <p className="font-mono text-xs uppercase tracking-widest text-signal mb-3">§ Résumé</p>
+            <h1 className="font-display text-3xl sm:text-4xl font-medium text-ink">Résumé</h1>
           </div>
-          <div className="w-full min-h-[150vh] rounded-lg overflow-hidden border border-gray-200">
-            <iframe
-              src={RESUME_URL}
-              className="w-full h-[150vh]"
-              style={{ minHeight: '150vh' }}
-              title="Ruben Carrazco's Resume"
-            />
+          <div className="flex gap-3">
+            <a
+              href={RESUME_PDF}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 font-mono text-xs uppercase tracking-wide border border-line text-ink px-4 py-2.5 rounded hover:border-signal hover:text-signal transition-colors"
+            >
+              <ExternalLink size={16} />
+              Open in new tab
+            </a>
+            <a
+              href={RESUME_PDF}
+              download
+              className="flex items-center gap-2 font-mono text-xs uppercase tracking-wide bg-ink text-paper px-4 py-2.5 rounded hover:bg-signal transition-colors"
+            >
+              <Download size={16} />
+              Download PDF
+            </a>
           </div>
+        </div>
+        <div className="w-full min-h-[150vh] rounded-lg overflow-hidden border border-line">
+          <iframe src={RESUME_PDF} className="w-full h-[150vh]" style={{ minHeight: "150vh" }} title="Ruben Carrazco's Resume" />
         </div>
       </div>
     </div>
