@@ -1,32 +1,6 @@
 import { Link } from "react-router-dom";
 import Profile from "../components/Profile";
-
-const projects = [
-  {
-    id: "wearable-vr-glove",
-    title: "Wearable VR Glove",
-    image: "/ee-portfolio/vr_glove.JPG",
-    skills: ["Teensy-ESP32", "Unity", "ESP-NOW"],
-  },
-  {
-    id: "ac-dc-converter",
-    title: "AC to DC Converter",
-    image: "/ee-portfolio/acdcconverter.JPG",
-    skills: ["Full-Bridge", "LTspice", "Oscilloscope"],
-  },
-  {
-    id: "music-synthesizer",
-    title: "Enhanced Music Synthesizer",
-    image: "/ee-portfolio/music snythesizer.jpg",
-    skills: ["Verilog", "FPGA", "VGA"],
-  },
-  {
-    id: "simd-gemm-accelerator",
-    title: "SIMD GEMM Accelerator",
-    image: "/ee-portfolio/coming-soon-poster.svg",
-    skills: ["SystemVerilog", "C/C++", "VLSI"],
-  },
-];
+import { projects, asset } from "@/data/projects";
 
 const Projects = () => {
   return (
@@ -48,7 +22,7 @@ const Projects = () => {
                   <div className="flex flex-col items-center">
                     <div className="w-32 h-32 rounded-full overflow-hidden mb-4 border-2 border-gray-100">
                       <img
-                        src={project.image}
+                        src={asset(project.thumb ?? project.image)}
                         alt={project.title}
                         className="w-full h-full object-cover"
                       />
@@ -57,7 +31,7 @@ const Projects = () => {
                       {project.title}
                     </h3>
                     <div className="flex flex-wrap justify-center gap-2">
-                      {project.skills.map((skill, skillIndex) => (
+                      {project.cardSkills.map((skill, skillIndex) => (
                         <span
                           key={skillIndex}
                           className="text-sm text-gray-600 bg-gray-100 px-3 py-1 rounded-full"

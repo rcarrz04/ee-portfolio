@@ -1,3 +1,4 @@
+import { asset } from "@/data/projects";
 import { Mail, Linkedin, Github } from "lucide-react";
 
 const Contact = () => {
@@ -39,7 +40,7 @@ const Contact = () => {
             </div>
             <div className="md:col-span-2 rounded-lg overflow-hidden -mt-8">
               <img
-                src="/ee-portfolio/skydiving.jpg"
+                src={asset("skydiving.jpg")}
                 alt="Skydiving"
                 className="w-full h-[400px] object-cover"
               />
