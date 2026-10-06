@@ -18,6 +18,8 @@ export interface Project {
   metrics?: { value: string; label: string }[];
   detailImages?: { src: string; alt: string; ratio: number; fit?: "cover" | "contain"; caption?: string }[];
   report?: { src: string; label: string };
+  /** Show the report/poster as the first tab instead of the last. */
+  reportFirst?: boolean;
   links?: { label: string; href: string }[];
 }
 
@@ -134,6 +136,7 @@ export const projects: Project[] = [
       { src: asset("jamming-gripper-testing.png"), alt: "Testing set-up: object pressed onto the gripper, then container filled with water to induce swelling", ratio: 1603 / 420, fit: "contain", caption: "Testing set-up, from the poster." },
     ],
     report: { src: asset("jamming-gripper-poster.pdf"), label: "Research Poster" },
+    reportFirst: true,
     links: [
       { label: "Feig Lab", href: "https://feiglab.stanford.edu" },
       { label: "Co-authored review (separate project): Toward Next-Generation Ingestible Hydrogels, Biomacromolecules 2025", href: "https://doi.org/10.1021/acs.biomac.4c00902" },

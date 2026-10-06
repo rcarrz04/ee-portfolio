@@ -98,7 +98,7 @@ const ProjectDetail = () => {
           </div>
 
           <div className="md:col-span-3 min-w-0 md:sticky md:top-24">
-            <FigureViewer key={project.id} images={images} report={project.report} />
+            <FigureViewer key={project.id} images={images} report={project.report} reportFirst={project.reportFirst} />
           </div>
         </div>
       </div>
