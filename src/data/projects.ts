@@ -139,7 +139,7 @@ export const projects: Project[] = [
     reportFirst: true,
     links: [
       { label: "Feig Lab", href: "https://feiglab.stanford.edu" },
-      { label: "Co-authored review (separate project): Toward Next-Generation Ingestible Hydrogels, Biomacromolecules 2025", href: "https://doi.org/10.1021/acs.biomac.4c00902" },
+      { label: "Co-authored perspective (separate project): Toward Next-Generation Ingestible Hydrogels, Biomacromolecules 2025", href: "https://doi.org/10.1021/acs.biomac.4c00902" },
     ],
   },
   {

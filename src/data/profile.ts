@@ -58,7 +58,7 @@ export const experience: ExperienceItem[] = [
     points: [
       "Prototyped a pump-free universal jamming gripper that replaces vacuum-based jamming with stimuli-responsive hydrogel beads confined in a porous membrane; fabricated membrane designs in flexible resin and built a CAD-designed, 3D-printed test fixture.",
       "Conducted literature reviews, failure analysis, and iterative design improvements with lab members and researchers in other on-campus labs, leading to a serpentine-like membrane concept aimed at the desired stress-strain characteristics; presented the work in a research poster.",
-      "Co-authored a review article on ingestible hydrogels published in Biomacromolecules (2025).",
+      "Co-authored a perspective article on ingestible hydrogels published in Biomacromolecules, a peer-reviewed journal (2025).",
     ],
   },
 ];
@@ -81,7 +81,7 @@ export const publications: Publication[] = [
     year: 2025,
     details: "26 (9), 5497–5513",
     doi: "10.1021/acs.biomac.4c00902",
-    type: "Review article",
+    type: "Perspective",
   },
 ];
 
