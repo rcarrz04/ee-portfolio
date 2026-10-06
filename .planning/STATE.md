@@ -100,4 +100,4 @@ Resume file: None
 
 | # | Description | Date | Commit | Directory |
 |---|-------------|------|--------|-----------|
-| 261005-p0g | MIPS page: flipped Sobel as main image, add pipeline control diagram | 2026-10-06 |  | [261005-p0g-mips-page-flipped-sobel-as-main-image-ad](./quick/261005-p0g-mips-page-flipped-sobel-as-main-image-ad/) |
+| 261005-p0g | MIPS page: flipped Sobel as main image, add pipeline control diagram | 2026-10-06 | f2403301 | [261005-p0g-mips-page-flipped-sobel-as-main-image-ad](./quick/261005-p0g-mips-page-flipped-sobel-as-main-image-ad/) |
