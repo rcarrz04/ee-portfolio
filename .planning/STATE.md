@@ -109,3 +109,4 @@ Resume file: None
 | fast-261006f | Thermal page: remove two RMSE chart images | 2026-10-06 | bb1c8c67 | (inline /gsd-fast, no task dir) |
 | fast-261006g | About: add Feig Lab research entry (Apr. 2024 — Jan. 2025) and Biomacromolecules publication | 2026-10-06 | 4b8ad28b | (inline /gsd-fast, no task dir) |
 | fast-261006h | Music synthesizer page: remove EE108 report PDF (honor code) | 2026-10-06 | 59f83339 | (inline /gsd-fast, no task dir) |
+| fast-261006i | Purge public/ee108finalreport.pdf from git history (filter-branch + force-push); backup bundle ~/ee-portfolio-pre-purge.bundle | 2026-10-06 | n/a (history rewrite) | (inline, no task dir) |
