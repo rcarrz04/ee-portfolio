@@ -92,7 +92,7 @@ export const projects: Project[] = [
     detailImages: [
       { src: asset("mips-sobel-output.png"), alt: "Sobel edge-detection output", ratio: 1106 / 630, fit: "contain", caption: "Output of the Sobel edge-detection workload." },
       { src: asset("mips-reference-datapath.png"), alt: "Reference single-cycle MIPS datapath", ratio: 1320 / 765, fit: "contain", caption: "Reference single-cycle MIPS datapath from course lecture slides. The pipelined design splits this into five stages and adds forwarding and hazard control." },
-      { src: asset("mips-pipeline-control.jpeg"), alt: "Control signals propagating through the pipeline registers", ratio: 1610 / 788, fit: "contain", caption: "Control signals propagating through the pipeline registers (IF/ID, ID/EX, EX/MEM, MEM/WB)." },
+      { src: asset("mips-pipeline-control.jpeg"), alt: "Control signals propagating through the pipeline registers", ratio: 1610 / 788, fit: "contain", caption: "Control signals propagating through the pipeline registers (IF/ID, ID/EX, EX/MEM, MEM/WB), from course lecture slides." },
     ],
   },
   {
