@@ -111,3 +111,4 @@ Resume file: None
 | fast-261006h | Music synthesizer page: remove EE108 report PDF (honor code) | 2026-10-06 | 59f83339 | (inline /gsd-fast, no task dir) |
 | fast-261006i | Purge public/ee108finalreport.pdf from git history (filter-branch + force-push); backup bundle ~/ee-portfolio-pre-purge.bundle | 2026-10-06 | n/a (history rewrite) | (inline, no task dir) |
 | fast-261006j | Add Feig Lab jamming gripper research project page (poster tab, cropped figures) | 2026-10-06 | 16955532 | (inline /gsd-fast, no task dir) |
+| 261005-wdn | Separate research from EE projects (Research nav, page, routes) | 2026-10-06 | 2a61ad76 | [261005-wdn-separate-research-from-ee-projects](./quick/261005-wdn-separate-research-from-ee-projects/) |
