@@ -114,3 +114,4 @@ Resume file: None
 | 261005-wdn | Separate research from EE projects (Research nav, page, routes) | 2026-10-06 | 2a61ad76 | [261005-wdn-separate-research-from-ee-projects](./quick/261005-wdn-separate-research-from-ee-projects/) |
 | fast-261006k | Gripper research page: poster PDF is the first/default tab (reportFirst); taller PDF frame | 2026-10-06 | 0567d909 | (inline /gsd-fast, no task dir) |
 | fast-261006l | Research page: more space above Publications (mt-16 to mt-28) | 2026-10-06 | 0107b1d1 | (inline /gsd-fast, no task dir) |
+| fast-261006m | Research page: reduce space above Publications (mt-28 to mt-20) | 2026-10-06 | ebbd32ba | (inline /gsd-fast, no task dir) |
