@@ -104,3 +104,4 @@ Resume file: None
 | fast-261006 | Thermal page: new cover image, add architecture comparison figure | 2026-10-06 | 2de11060 | (inline /gsd-fast, no task dir) |
 | fast-261006b | DNN page: add array architecture figure; MIPS page: remove schematic diagram | 2026-10-06 | 5d6d9215 | (inline /gsd-fast, no task dir) |
 | fast-261006c | Project detail: multi-panel layout + FigureViewer; remove SSI from About bio/experience | 2026-10-06 | 89081d49 | (inline /gsd-fast, no task dir) |
+| fast-261006d | Add robotic arm project (EE 64, Winter 2024, with Jess Fonseca) | 2026-10-06 | b8a1afd7 | (inline /gsd-fast, no task dir) |
