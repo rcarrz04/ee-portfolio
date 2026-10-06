@@ -141,7 +141,6 @@ export const projects: Project[] = [
       "A Verilog-based music synthesizer running on an FPGA that can play multiple notes, adjust amplitude through a rotary input, and visualize audio output on a VGA display. PWM support provides simple LED feedback.",
     description:
       "This project implements a Verilog-based music synthesizer on an FPGA that can mix waveforms, generate simple harmonics, and output signals to a VGA display. Multiple tones can be played at once by scheduling up to three notes in parallel, and amplitude can be adjusted through a rotary-encoder interface. The design also includes basic PWM output for visual feedback using LEDs. Development was done in Xilinx Vivado, with debugging focused on timing control and stable VGA rendering. The project provided hands-on experience with digital audio generation, hardware description design, and FPGA-based signal visualization.",
-    report: { src: asset("ee108finalreport.pdf"), label: "Project Report" },
   },
   {
     id: "robotic-arm",
