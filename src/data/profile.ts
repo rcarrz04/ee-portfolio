@@ -51,6 +51,38 @@ export const experience: ExperienceItem[] = [
       "Mentor students through debugging in section and office hours, emphasizing algorithmic thinking, abstraction, and debugging best practices.",
     ],
   },
+  {
+    role: "Undergraduate Researcher — Feig Lab",
+    org: "Stanford Mechanical Engineering",
+    dates: "Apr. 2024 — Jan. 2025",
+    points: [
+      "Prototyped a pump-free universal jamming gripper that replaces vacuum-based jamming with stimuli-responsive hydrogel beads confined in a porous membrane; fabricated membrane designs in flexible resin and built a CAD-designed, 3D-printed test fixture.",
+      "Conducted literature reviews, failure analysis, and iterative design improvements with lab members and researchers in other on-campus labs, leading to a serpentine-like membrane concept aimed at the desired stress-strain characteristics; presented the work in a research poster.",
+      "Co-authored a review article on ingestible hydrogels published in Biomacromolecules (2025).",
+    ],
+  },
+];
+
+export interface Publication {
+  authors: string[];
+  title: string;
+  venue: string;
+  year: number;
+  details: string;
+  doi: string;
+  type: string;
+}
+
+export const publications: Publication[] = [
+  {
+    authors: ["Liu, G. W.", "Su, R.", "Osterling, B. L. G.", "Carrazco, R.", "Feig, V. R."],
+    title: "Toward Next-Generation Ingestible Hydrogels",
+    venue: "Biomacromolecules",
+    year: 2025,
+    details: "26 (9), 5497–5513",
+    doi: "10.1021/acs.biomac.4c00902",
+    type: "Review article",
+  },
 ];
 
 export const skills = {
