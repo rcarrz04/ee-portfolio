@@ -108,6 +108,35 @@ export const projects: Project[] = [
     report: { src: asset("wearable vr glove report.pdf"), label: "Project Report" },
   },
   {
+    id: "jamming-gripper-research",
+    tag: "RES·01",
+    title: "Pump-Free Universal Jamming Gripper",
+    image: asset("jamming-gripper-swollen.png"),
+    date: "Apr. 2024 — Jan. 2025",
+    course: "Feig Lab, Stanford Mechanical Engineering. Research with Prof. Vivian Feig.",
+    skills: ["Soft Robotics", "Hydrogels", "Membrane Fabrication", "CAD", "3D Printing", "Failure Analysis"],
+    overview:
+      "Research on a gripper that replaces vacuum-based jamming with stimuli-responsive hydrogel beads confined in a porous, flexible membrane, aiming for a compact, pump-free design that can work in enclosed environments.",
+    description:
+      "Universal jamming grippers solidify around an object when a vacuum pump evacuates air, but the pump makes the gripper bulky, ties its grasping force to the pump's efficiency, and makes it hard to use in enclosed spaces. We proposed replacing the vacuum with hydrogel beads that induce jamming when they swell. Hydrogels do not generate high forces on their own, but a 2022 study showed that confining a swelling hydrogel in a non-expanding membrane does, so the beads sit inside a stiff, flexible, porous membrane. I compared three ways to make that membrane (joining thin films, 3D printing in SLS or resin, and molding silicone), prototyped several of them, and printed the first design in Formlabs Flexible 80A resin: a 0.5 mm membrane on a 43 mm sphere. The test fixture was designed in CAD and printed in PLA. In the first test, with 10 g of beads after 5 minutes of swelling, the object was not grasped and was pushed back up. The membrane was flexible and the beads built up high internal pressure, but the gripper did not envelop the object, because isotropic stretching of the membrane creates unwanted vertical forces. The failure analysis pointed to redesigning the gripper to favor compressive forces, and iteration eventually led to a serpentine-like membrane concept aimed at the desired stress-strain characteristics. Instron testing of gripping strength was the planned next step.",
+    metrics: [
+      { value: "0.5 mm", label: "membrane thickness" },
+      { value: "43 mm", label: "sphere diameter" },
+      { value: "80A", label: "flexible resin (Shore)" },
+      { value: "10 g", label: "hydrogel beads in first test" },
+    ],
+    detailImages: [
+      { src: asset("jamming-gripper-swollen.png"), alt: "The first gripper prototype after swelling with 10 grams of hydrogel beads", ratio: 521 / 376, fit: "contain", caption: "First prototype with 10 g of hydrogel beads, after 5 minutes of swelling." },
+      { src: asset("jamming-gripper-fabrication.png"), alt: "Membrane fabrication: hydrogel bead packet, 3D-printed gripper CAD, and silicone mold casing", ratio: 1588 / 446, fit: "contain", caption: "Membrane fabrication options: hydrogel bead packet, 3D-printed gripper CAD, and casings for a silicone mold." },
+      { src: asset("jamming-gripper-testing.png"), alt: "Testing set-up: object pressed onto the gripper, then container filled with water to induce swelling", ratio: 1603 / 420, fit: "contain", caption: "Testing set-up, from the poster." },
+    ],
+    report: { src: asset("jamming-gripper-poster.pdf"), label: "Research Poster" },
+    links: [
+      { label: "Feig Lab", href: "https://feiglab.stanford.edu" },
+      { label: "Co-authored review (separate project): Toward Next-Generation Ingestible Hydrogels, Biomacromolecules 2025", href: "https://doi.org/10.1021/acs.biomac.4c00902" },
+    ],
+  },
+  {
     id: "ac-dc-converter",
     tag: "PWR·01",
     title: "AC to DC Converter",
