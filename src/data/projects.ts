@@ -146,6 +146,23 @@ export const projects: Project[] = [
       "This project implements a Verilog-based music synthesizer on an FPGA that can mix waveforms, generate simple harmonics, and output signals to a VGA display. Multiple tones can be played at once by scheduling up to three notes in parallel, and amplitude can be adjusted through a rotary-encoder interface. The design also includes basic PWM output for visual feedback using LEDs. Development was done in Xilinx Vivado, with debugging focused on timing control and stable VGA rendering. The project provided hands-on experience with digital audio generation, hardware description design, and FPGA-based signal visualization.",
     report: { src: asset("ee108finalreport.pdf"), label: "Project Report" },
   },
+  {
+    id: "robotic-arm",
+    tag: "MECH·01",
+    title: "Robotic Arm",
+    image: asset("robotic-arm-card.jpg"),
+    date: "Jan. — Mar. 2024",
+    course: "Stanford University | EE 64, Mechanical Prototyping for Electrical Engineers. Joint work with Jess Fonseca.",
+    skills: ["Fusion 360", "3D Printing", "Mechanical Design", "Arduino Mega", "Gear Linkage"],
+    overview:
+      "A robotic arm built with a partner for EE 64: a 3D-printed base and gripper, aluminum-extrusion links, and an Arduino Mega controller. The gripper is a gear-linkage design modeled in Fusion 360.",
+    description:
+      "EE 64 teaches electrical engineers to design mechanical assemblies for manufacture with 3D printers and laser cutters, and to interface them with store-bought parts. For the course project, we built a robotic arm that combines a 3D-printed base, aluminum-extrusion links, and a two-finger gripper, all driven from an Arduino Mega (the Arduino IDE is open on the laptop in the photo). The gripper is a 14-component assembly modeled in Fusion 360, with fingers, thumbs, base connectors, and gear linkages; in the photo it holds a chess king.",
+    detailImages: [
+      { src: asset("robotic-arm.jpg"), alt: "The robotic arm holding a chess king, with the Arduino IDE open on a laptop", ratio: 1600 / 1200, fit: "contain", caption: "The finished arm holding a chess king, with the Arduino IDE open on the laptop." },
+      { src: asset("robotic-arm-gripper-cad.png"), alt: "Fusion 360 model of the gripper assembly", ratio: 1103 / 610, fit: "contain", caption: "Gripper assembly modeled in Fusion 360: fingers, thumbs, base connectors, and gear linkages." },
+    ],
+  },
 ];
 
 export const getProject = (id: string) => projects.find((p) => p.id === id);
