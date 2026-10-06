@@ -87,6 +87,7 @@ export const projects: Project[] = [
       { value: "40+", label: "instructions" },
     ],
     detailImages: [
+      { src: asset("mips-reference-datapath.png"), alt: "Reference single-cycle MIPS datapath", ratio: 1320 / 765, fit: "contain", caption: "Reference single-cycle MIPS datapath from course lecture slides. The pipelined design splits this into five stages and adds forwarding and hazard control." },
       { src: asset("mips-pipeline-diagram.svg"), alt: "5-stage MIPS pipeline with forwarding", ratio: 720 / 300, fit: "contain", caption: "Pipeline stages and forwarding paths (schematic)." },
       { src: asset("mips-sobel-output.png"), alt: "Sobel edge-detection output", ratio: 1106 / 630, fit: "contain", caption: "Output of the Sobel edge-detection workload." },
     ],
