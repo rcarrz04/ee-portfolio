@@ -41,8 +41,6 @@ export const projects: Project[] = [
     detailImages: [
       { src: asset("thermal-predictions.png"), alt: "Per-family thermal predictions versus ground truth", ratio: 2387 / 1439, fit: "contain" },
       { src: asset("thermal-architectures.png"), alt: "The three architectures compared: PlainCNN, EncoderDecoder, and U-Net", ratio: 1026 / 476, fit: "contain", caption: "The three architectures compared: PlainCNN (~600K params), EncoderDecoder (~28M), and U-Net with skip connections (~2M)." },
-      { src: asset("thermal-indist-rmse.png"), alt: "In-distribution RMSE for all 12 models", ratio: 2, fit: "contain" },
-      { src: asset("thermal-ood-convection.png"), alt: "RMSE under out-of-distribution convection resistance", ratio: 1.6, fit: "contain" },
     ],
     report: { src: asset("thermal-poster.pdf"), label: "Project Poster" },
   },
