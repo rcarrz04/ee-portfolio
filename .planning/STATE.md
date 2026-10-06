@@ -102,3 +102,4 @@ Resume file: None
 |---|-------------|------|--------|-----------|
 | 261005-p0g | MIPS page: flipped Sobel as main image, add pipeline control diagram | 2026-10-06 | f2403301 | [261005-p0g-mips-page-flipped-sobel-as-main-image-ad](./quick/261005-p0g-mips-page-flipped-sobel-as-main-image-ad/) |
 | fast-261006 | Thermal page: new cover image, add architecture comparison figure | 2026-10-06 | 2de11060 | (inline /gsd-fast, no task dir) |
+| fast-261006b | DNN page: add array architecture figure; MIPS page: remove schematic diagram | 2026-10-06 | 5d6d9215 | (inline /gsd-fast, no task dir) |
