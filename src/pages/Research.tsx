@@ -28,7 +28,7 @@ const Research = () => {
           ))}
         </div>
 
-        <div className="mt-16">
+        <div className="mt-28">
           <h2 className="font-mono text-xs uppercase tracking-widest text-signal mb-4">Publications</h2>
           <ul className="space-y-4">
             {publications.map((pub) => (
