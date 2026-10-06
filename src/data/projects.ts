@@ -14,7 +14,7 @@ export interface Project {
   status?: "in-progress";
   /** Headline numbers shown at the top of the detail page. */
   metrics?: { value: string; label: string }[];
-  detailImages?: { src: string; alt: string; ratio: number; fit?: "cover" | "contain" }[];
+  detailImages?: { src: string; alt: string; ratio: number; fit?: "cover" | "contain"; caption?: string }[];
   report?: { src: string; label: string };
   links?: { label: string; href: string }[];
 }
@@ -86,7 +86,10 @@ export const projects: Project[] = [
       { value: "5", label: "pipeline stages" },
       { value: "40+", label: "instructions" },
     ],
-    detailImages: [{ src: asset("mips-pipeline-diagram.svg"), alt: "5-stage MIPS pipeline with forwarding", ratio: 720 / 300, fit: "contain" }],
+    detailImages: [
+      { src: asset("mips-pipeline-diagram.svg"), alt: "5-stage MIPS pipeline with forwarding", ratio: 720 / 300, fit: "contain", caption: "Pipeline stages and forwarding paths (schematic)." },
+      { src: asset("mips-sobel-output.png"), alt: "Sobel edge-detection output", ratio: 1106 / 630, fit: "contain", caption: "Output of the Sobel edge-detection workload." },
+    ],
   },
   {
     id: "wearable-vr-glove",

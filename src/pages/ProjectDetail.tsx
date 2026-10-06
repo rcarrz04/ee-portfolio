@@ -112,6 +112,9 @@ const ProjectDetail = () => {
                     className={`w-full h-full ${img.fit === "contain" ? "object-contain" : "object-cover"}`}
                   />
                 </AspectRatio>
+                {img.caption && (
+                  <p className="font-mono text-[11px] text-graphite mt-2">{img.caption}</p>
+                )}
               </div>
             ))}
 
