@@ -49,41 +49,26 @@ export const projects: Project[] = [
     id: "dnn-inference-accelerator",
     tag: "VLSI·02",
     title: "DNN Inference Hardware Accelerator",
-    image: asset("dnn-accelerator-thumb.svg"),
+    image: asset("dnn-layout.png"),
     date: "Jan. — Mar. 2026",
     course: "Stanford University | EE272, VLSI Projects I",
     skills: ["HLS", "RTL", "UVM", "Synopsys Design Compiler", "Cadence Innovus", "Systolic Array", "Dataflow Optimization"],
     overview:
-      "A 16×16 systolic-array accelerator for DNN inference, taken from high-level synthesis through RTL, synthesis, place-and-route, and signoff. Loop pipelining, unrolling, and dataflow optimization reached 85% MAC utilization.",
+      "A 16×16 systolic-array accelerator for DNN inference, taken from high-level synthesis through RTL, synthesis, place-and-route, and signoff. The final HLS design meets the target cycle count on every ResNet-18 convolution layer group, with MAC utilization peaking at 85%.",
     description:
-      "This project implements a 16×16 weight-stationary systolic array for convolutional layers. Weights are loaded into the processing elements, skewed inputs stream across the array, and partial sums accumulate down the columns, with double buffers hiding memory latency for both inputs and weights. The design was written in C++ for high-level synthesis, then optimized with loop pipelining, unrolling, and dataflow restructuring to reach 85% MAC utilization. It was then driven through the full ASIC flow: synthesis with Synopsys Design Compiler, and place-and-route and signoff with Cadence Innovus. A UVM testbench provided functional verification and validation across the design flow.",
+      "This project implements a 16×16 weight-stationary systolic array for convolutional layers. Weights are loaded into the processing elements, skewed inputs stream across the array, and partial sums accumulate down the columns, with double buffers hiding memory latency for both inputs and weights. The design was written in C++ for high-level synthesis, then optimized with loop pipelining, unrolling, and dataflow restructuring. We evaluated it on the convolution layers of ResNet-18: the final HLS design beat the target cycle count on all eight layer groups (for example, conv2_x ran in about 530,000 cycles against a 540,000-cycle target at 85% MAC utilization), and reached 0.59–0.85 utilization on every layer group except the first convolution (0.16). The design was then driven through the full ASIC flow: synthesis with Synopsys Design Compiler, and place-and-route and signoff with Cadence Innovus. A UVM testbench provided functional verification and validation across the design flow.",
     metrics: [
       { value: "16×16", label: "systolic array" },
-      { value: "85%", label: "MAC utilization" },
+      { value: "85%", label: "peak MAC utilization (conv2_x)" },
+      { value: "8 / 8", label: "ResNet-18 layer groups meet target cycles" },
       { value: "Full", label: "RTL-to-signoff ASIC flow" },
-      { value: "UVM", label: "verification testbench" },
     ],
-    detailImages: [{ src: asset("dnn-accelerator-diagram.svg"), alt: "Weight-stationary systolic array diagram", ratio: 720 / 500, fit: "contain" }],
-  },
-  {
-    id: "simd-gemm-accelerator",
-    tag: "VLSI·01",
-    title: "SIMD GEMM Accelerator",
-    image: asset("simd-gemm-thumb.svg"),
-    date: "Sep. — Dec. 2025",
-    course: "Stanford University | EE271, Introduction to VLSI Systems",
-    skills: ["SystemVerilog", "HLS", "C/C++", "SIMD", "GEMM", "PPA Optimization", "Design-Space Exploration"],
-    overview:
-      "A SIMD matrix-multiply (GEMM) accelerator optimized for power, area, and latency. Architecture and resource trade-off exploration improved the combined power-area-latency figure of merit by more than 60%.",
-    description:
-      "This project builds a SIMD GEMM accelerator for matrix operations, starting from a C/C++ model of the intended behavior and moving through high-level synthesis and SystemVerilog. The optimization work centered on architecture and resource trade-offs: sharing hardware cut the multiplier count from 7 to 4, a 17% area reduction, and the design was then scaled to 64 processing elements for a 4× latency reduction while maintaining timing closure. Together these changes improved the power-area-latency figure of merit by more than 60%.",
-    metrics: [
-      { value: "60%+", label: "PAL figure-of-merit gain" },
-      { value: "7 → 4", label: "multipliers (−17% area)" },
-      { value: "64", label: "processing elements" },
-      { value: "4×", label: "latency reduction" },
+    detailImages: [
+      { src: asset("dnn-accelerator-diagram.svg"), alt: "Weight-stationary systolic array diagram", ratio: 720 / 500, fit: "contain" },
+      { src: asset("dnn-layer-results.png"), alt: "Cycles and MAC utilization per ResNet-18 layer: target, unoptimized Verilog, and final HLS design", ratio: 1306 / 590, fit: "contain" },
+      { src: asset("dnn-resnet18-layers.png"), alt: "ResNet-18 convolution layers grouped for evaluation", ratio: 526 / 1188, fit: "contain" },
+      { src: asset("dnn-layout.png"), alt: "Place-and-route layout of the accelerator", ratio: 688 / 590, fit: "contain" },
     ],
-    detailImages: [{ src: asset("simd-gemm-diagram.svg"), alt: "GEMM: C = A × B", ratio: 16 / 9, fit: "contain" }],
   },
   {
     id: "mips-pipelined-processor",

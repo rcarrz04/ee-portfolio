@@ -98,17 +98,21 @@ const ProjectDetail = () => {
             )}
 
             {images.map((img) => (
-              <AspectRatio
+              <div
                 key={img.src}
-                ratio={img.ratio}
-                className="bg-secondary rounded-lg overflow-hidden border border-line"
+                style={img.ratio < 1 ? { maxWidth: `${Math.round(img.ratio * 640)}px`, marginInline: "auto" } : undefined}
               >
-                <img
-                  src={img.src}
-                  alt={img.alt}
-                  className={`w-full h-full ${img.fit === "contain" ? "object-contain" : "object-cover"}`}
-                />
-              </AspectRatio>
+                <AspectRatio
+                  ratio={img.ratio}
+                  className="bg-secondary rounded-lg overflow-hidden border border-line"
+                >
+                  <img
+                    src={img.src}
+                    alt={img.alt}
+                    className={`w-full h-full ${img.fit === "contain" ? "object-contain" : "object-cover"}`}
+                  />
+                </AspectRatio>
+              </div>
             ))}
 
             <div className="prose max-w-none">
