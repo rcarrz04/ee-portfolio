@@ -107,3 +107,4 @@ Resume file: None
 | fast-261006d | Add robotic arm project (EE 64, Winter 2024, with Jess Fonseca) | 2026-10-06 | b8a1afd7 | (inline /gsd-fast, no task dir) |
 | fast-261006e | DNN page: remove drawn systolic array diagram | 2026-10-06 | 218a4074 | (inline /gsd-fast, no task dir) |
 | fast-261006f | Thermal page: remove two RMSE chart images | 2026-10-06 | bb1c8c67 | (inline /gsd-fast, no task dir) |
+| fast-261006g | About: add Feig Lab research entry (Apr. 2024 — Jan. 2025) and Biomacromolecules publication | 2026-10-06 | 4b8ad28b | (inline /gsd-fast, no task dir) |
