@@ -65,6 +65,7 @@ export const projects: Project[] = [
       { value: "Full", label: "RTL-to-signoff ASIC flow" },
     ],
     detailImages: [
+      { src: asset("dnn-array-architecture.png"), alt: "Systolic array with input, weight, and accumulation buffers and the MAC processing element", ratio: 1170 / 692, fit: "contain", caption: "Systolic array with input, weight, and accumulation buffers, and the MAC processing element." },
       { src: asset("dnn-accelerator-diagram.svg"), alt: "Weight-stationary systolic array diagram", ratio: 720 / 500, fit: "contain" },
       { src: asset("dnn-layer-results.png"), alt: "Cycles and MAC utilization per ResNet-18 layer: target, unoptimized Verilog, and final HLS design", ratio: 1306 / 590, fit: "contain" },
       { src: asset("dnn-resnet18-layers.png"), alt: "ResNet-18 convolution layers grouped for evaluation", ratio: 526 / 1188, fit: "contain" },
@@ -90,7 +91,6 @@ export const projects: Project[] = [
     detailImages: [
       { src: asset("mips-sobel-output.png"), alt: "Sobel edge-detection output", ratio: 1106 / 630, fit: "contain", caption: "Output of the Sobel edge-detection workload." },
       { src: asset("mips-reference-datapath.png"), alt: "Reference single-cycle MIPS datapath", ratio: 1320 / 765, fit: "contain", caption: "Reference single-cycle MIPS datapath from course lecture slides. The pipelined design splits this into five stages and adds forwarding and hazard control." },
-      { src: asset("mips-pipeline-diagram.svg"), alt: "5-stage MIPS pipeline with forwarding", ratio: 720 / 300, fit: "contain", caption: "Pipeline stages and forwarding paths (schematic)." },
       { src: asset("mips-pipeline-control.jpeg"), alt: "Control signals propagating through the pipeline registers", ratio: 1610 / 788, fit: "contain", caption: "Control signals propagating through the pipeline registers (IF/ID, ID/EX, EX/MEM, MEM/WB)." },
     ],
   },
