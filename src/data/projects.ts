@@ -66,7 +66,6 @@ export const projects: Project[] = [
     ],
     detailImages: [
       { src: asset("dnn-array-architecture.png"), alt: "Systolic array with input, weight, and accumulation buffers and the MAC processing element", ratio: 1170 / 692, fit: "contain", caption: "Systolic array with input, weight, and accumulation buffers, and the MAC processing element." },
-      { src: asset("dnn-accelerator-diagram.svg"), alt: "Weight-stationary systolic array diagram", ratio: 720 / 500, fit: "contain" },
       { src: asset("dnn-layer-results.png"), alt: "Cycles and MAC utilization per ResNet-18 layer: target, unoptimized Verilog, and final HLS design", ratio: 1306 / 590, fit: "contain" },
       { src: asset("dnn-resnet18-layers.png"), alt: "ResNet-18 convolution layers grouped for evaluation", ratio: 526 / 1188, fit: "contain" },
       { src: asset("dnn-layout.png"), alt: "Place-and-route layout of the accelerator", ratio: 688 / 590, fit: "contain" },
