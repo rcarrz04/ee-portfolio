@@ -1,5 +1,5 @@
 import ProjectCard from "@/components/ProjectCard";
-import { projects } from "@/data/projects";
+import { engineeringProjects } from "@/data/projects";
 
 const Projects = () => {
   return (
@@ -11,7 +11,7 @@ const Projects = () => {
           Hardware and software work from coursework and independent builds — circuits, FPGAs, VLSI, ML, and VR.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project) => (
+          {engineeringProjects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>

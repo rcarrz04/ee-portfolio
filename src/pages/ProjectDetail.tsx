@@ -21,10 +21,10 @@ const ProjectDetail = () => {
     <div className="min-h-screen bg-paper pt-28 pb-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <Link
-          to="/projects"
+          to={project.section === "research" ? "/research" : "/projects"}
           className="inline-flex items-center gap-1.5 font-mono text-xs uppercase tracking-wide text-graphite hover:text-ink mb-8 transition-colors"
         >
-          <ArrowLeft size={14} /> Projects
+          <ArrowLeft size={14} /> {project.section === "research" ? "Research" : "Projects"}
         </Link>
 
         <header className="mb-10 max-w-3xl">

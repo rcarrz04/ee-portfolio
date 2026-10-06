@@ -12,6 +12,8 @@ export interface Project {
   overview: string;
   description: string;
   status?: "in-progress";
+  /** Research entries are listed on /research instead of /projects. */
+  section?: "research";
   /** Headline numbers shown at the top of the detail page. */
   metrics?: { value: string; label: string }[];
   detailImages?: { src: string; alt: string; ratio: number; fit?: "cover" | "contain"; caption?: string }[];
@@ -109,6 +111,7 @@ export const projects: Project[] = [
   },
   {
     id: "jamming-gripper-research",
+    section: "research",
     tag: "RES·01",
     title: "Pump-Free Universal Jamming Gripper",
     image: asset("jamming-gripper-swollen.png"),
@@ -191,3 +194,9 @@ export const projects: Project[] = [
 ];
 
 export const getProject = (id: string) => projects.find((p) => p.id === id);
+
+export const engineeringProjects = projects.filter((p) => p.section !== "research");
+export const researchProjects = projects.filter((p) => p.section === "research");
+
+export const projectPath = (p: Project) =>
+  `${p.section === "research" ? "/research" : "/projects"}/${p.id}`;

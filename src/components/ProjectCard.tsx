@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import type { Project } from "@/data/projects";
+import { projectPath, type Project } from "@/data/projects";
 
 const ProjectCard = ({ project }: { project: Project }) => {
   return (
-    <Link to={`/projects/${project.id}`} className="group block">
+    <Link to={projectPath(project)} className="group block">
       <div className="border border-line rounded-lg overflow-hidden bg-paper transition-colors duration-200 hover:border-signal/50">
         <div className="aspect-[4/3] overflow-hidden bg-secondary">
           <img

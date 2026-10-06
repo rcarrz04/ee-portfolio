@@ -4,7 +4,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { ArrowRight } from "lucide-react";
 import ProjectCard from "@/components/ProjectCard";
-import { projects } from "@/data/projects";
+import { engineeringProjects } from "@/data/projects";
 import { profile } from "@/data/profile";
 
 const fadeUp = {
@@ -90,7 +90,7 @@ const Home = () => {
           Featured work
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {projects.slice(0, 4).map((project, index) => (
+          {engineeringProjects.slice(0, 4).map((project, index) => (
             <motion.div
               key={project.id}
               initial={{ opacity: 0, y: 20 }}
@@ -105,7 +105,7 @@ const Home = () => {
           to="/projects"
           className="mt-10 inline-flex items-center gap-2 font-mono text-xs uppercase tracking-wide text-graphite hover:text-signal transition-colors"
         >
-          All {projects.length} projects <ArrowRight size={14} />
+          All {engineeringProjects.length} projects <ArrowRight size={14} />
         </Link>
       </section>
     </div>
