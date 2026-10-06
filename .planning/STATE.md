@@ -28,7 +28,7 @@ See: .planning/PROJECT.md (updated 2026-08-18)
 Phase: 01 (design-tokens-foundation) — EXECUTING
 Plan: 3 of 3
 Status: Ready to execute
-Last activity: 2026-08-21
+Last activity: 2026-10-06 - Completed quick task 261005-p0g: MIPS page: flipped Sobel as main image, add pipeline control diagram
 
 Progress: [███████░░░] 67%
 
@@ -95,3 +95,9 @@ Last session: 2026-08-21T00:32:41.151Z
 Stopped at: Completed 01-02-PLAN.md (TOKEN-04)
 Resume file: None
 </content>
+
+### Quick Tasks Completed
+
+| # | Description | Date | Commit | Directory |
+|---|-------------|------|--------|-----------|
+| 261005-p0g | MIPS page: flipped Sobel as main image, add pipeline control diagram | 2026-10-06 |  | [261005-p0g-mips-page-flipped-sobel-as-main-image-ad](./quick/261005-p0g-mips-page-flipped-sobel-as-main-image-ad/) |
