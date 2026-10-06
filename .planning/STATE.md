@@ -113,3 +113,4 @@ Resume file: None
 | fast-261006j | Add Feig Lab jamming gripper research project page (poster tab, cropped figures) | 2026-10-06 | 16955532 | (inline /gsd-fast, no task dir) |
 | 261005-wdn | Separate research from EE projects (Research nav, page, routes) | 2026-10-06 | 2a61ad76 | [261005-wdn-separate-research-from-ee-projects](./quick/261005-wdn-separate-research-from-ee-projects/) |
 | fast-261006k | Gripper research page: poster PDF is the first/default tab (reportFirst); taller PDF frame | 2026-10-06 | 0567d909 | (inline /gsd-fast, no task dir) |
+| fast-261006l | Research page: more space above Publications (mt-16 to mt-28) | 2026-10-06 | 0107b1d1 | (inline /gsd-fast, no task dir) |
