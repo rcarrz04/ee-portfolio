@@ -7,7 +7,7 @@ export const profile = {
   github: "https://github.com/rcarrz04",
   tagline:
     "Stanford EE: designing efficient hardware, and the software that shapes it.",
-  bio: "I'm an Electrical Engineering student at Stanford (Hardware and Software track) interested in building accessibility-enabling devices: things like glasses that caption conversations or describe surroundings, which depend on chips efficient enough to disappear into a frame. My work spans both sides of that problem. On the hardware side, I've designed a systolic-array DNN accelerator through the full ASIC flow and a pipelined MIPS processor. On the software side, I've trained a physics-constrained neural network that predicts chip heat maps, and I build healthcare software at HeartPulse. I'm especially interested in how compilers, parallelism, and memory locality determine what hardware can actually do. I also teach: I lead sections for Stanford's introductory programming courses and help fly rockets with the Stanford Student Space Initiative.",
+  bio: "I'm an Electrical Engineering student at Stanford (Hardware and Software track) interested in building accessibility-enabling devices: things like glasses that caption conversations or describe surroundings, which depend on chips efficient enough to disappear into a frame. My work spans both sides of that problem. On the hardware side, I've designed a systolic-array DNN accelerator through the full ASIC flow and a pipelined MIPS processor. On the software side, I've trained a physics-constrained neural network that predicts chip heat maps, and I build healthcare software at HeartPulse. I'm especially interested in how compilers, parallelism, and memory locality determine what hardware can actually do. I also teach: I lead sections for Stanford's introductory programming courses.",
 };
 
 export const education = {
@@ -49,15 +49,6 @@ export const experience: ExperienceItem[] = [
     points: [
       "Lead weekly Python and C++ discussion sections for Stanford's 900+ student introductory programming sequence, with about 15 students per section.",
       "Mentor students through debugging in section and office hours, emphasizing algorithmic thinking, abstraction, and debugging best practices.",
-    ],
-  },
-  {
-    role: "Avionics Team Member — Stanford Student Space Initiative (SSI)",
-    org: "Stanford University",
-    dates: "Apr. — June 2025",
-    points: [
-      "Developed an I2C-based gas control system using a Teensy microcontroller to monitor real-time pressure and temperature inside the rocket's tank system.",
-      "Programmed Arduino IDE drivers for solenoid valves and co-designed a modular electronics stand to verify bidirectional communication across all subsystems.",
     ],
   },
 ];
