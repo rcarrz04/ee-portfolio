@@ -116,3 +116,4 @@ Resume file: None
 | fast-261006l | Research page: more space above Publications (mt-16 to mt-28) | 2026-10-06 | 0107b1d1 | (inline /gsd-fast, no task dir) |
 | fast-261006m | Research page: reduce space above Publications (mt-28 to mt-20) | 2026-10-06 | ebbd32ba | (inline /gsd-fast, no task dir) |
 | fast-261006n | Resume v2 (Feig Lab, publication, DNN up-to-85%, SIMD removed) on site; MIPS control diagram attributed to lecture slides | 2026-10-06 | 0dd73bed | (inline /gsd-fast, no task dir) |
+| fast-261006o | Relabel Biomacromolecules paper as Perspective on site and resume | 2026-10-06 | 4dfd3452 | (inline /gsd-fast, no task dir) |
